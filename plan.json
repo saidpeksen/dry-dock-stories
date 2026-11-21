@@ -1,14 +1,14 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-21T23:15:00Z",
+ "updated_at": "2026-11-21T23:25:00Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk gelir 6–12 ay sonra; bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
   "summary": "Aşama 1'in ilk haftası. Üç Shorts yayında (19 ve 21 Kasım). 22 Kasım kararı: 04'ten itibaren Shorts \"nasıl / neden\" soru biçiminde (niş araştırması: olay anlatımı nişin en az izlenen şeridi). Plan artık bu sekmeden izleniyor.",
   "next": [
    "04'ün siparişi soru biçimiyle açılır (23 Kasım civarı); video hazır olunca bu sayfadan onaylarsın.",
-   "23 Kasım 19.00: Shorts 02 ve 03'ün 48 saatlik sonuçları.",
+   "23 Kasım 19.00: ChatGPT, 02 ve 03'ün 48 saatlik rakamlarını Studio'dan okur; Claude görevi Plan'a işler.",
    "04–08 soru biçimiyle çıkar; 48 saatlik izlenmeleri 01–03 ile karşılaştırılır."
   ]
  },
@@ -25,8 +25,8 @@
   },
   {
    "date": "2026-11-23",
-   "what": "Shorts 02 ve 03'ün 48 saatlik sonuçları",
-   "you": "Rakamları iletmek"
+   "what": "Shorts 02 ve 03'ün 48 saatlik sonuçları (ChatGPT okur, Claude işler)",
+   "you": null
   },
   {
    "date": "2026-11-26",
@@ -104,7 +104,7 @@
      "done": true
     },
     {
-     "text": "Shorts 02 ve 03 sonuçlarını kaydet (23 Kasım)",
+     "text": "Shorts 02 ve 03 sonuçlarını kaydet (23 Kasım, ChatGPT Studio'dan okur)",
      "done": false
     },
     {
@@ -236,8 +236,8 @@
   }
  ],
  "open": [
-  "Telefon doğrulaması (youtube.com/verify) ve kimlik doğrulamasının sonucu",
-  "Profil resmi ve kapak görseli",
+  "Telefon doğrulaması (youtube.com/verify): 22 Kasım'da yeniden gönderildi, cevap bekleniyor",
+  "Profil resmi ve kapak görseli: tasarım hazır (22 Kasım), yükleme bekliyor",
   "Shorts izlenme süresi saat eşiğine sayılmaz; gelir için uzun videolar şart"
  ]
 }
