@@ -20,7 +20,7 @@
   {"date": "2026-12-16", "what": "Aşama 1 sonu: ay değerlendirmesi, en iyi 2 konu seçilir", "you": "Karar"}
  ],
  "phases": [
-  {"title": "Hazırlık", "period": "tamamlandı", "items": [
+  {"title": "Hazırlık", "items": [
    {"text": "Piyasa araştırması ve konu seçimi: gerçek deniz hikâyeleri, İngilizce, yüzsüz", "done": true},
    {"text": "Kanal adı: Dry Dock Stories, @drydockstories", "done": true},
    {"text": "Kanal ayarları: çocuklara özel değil, kategori Eğitim, açıklama", "done": true},
