@@ -1,0 +1,54 @@
+{
+ "schema": 1,
+ "updated_at": "2026-11-21T10:22:04Z",
+ "channel": "Dry Dock Stories",
+ "runs": {
+  "claude": "2026-11-21T10:22:04Z",
+  "chatgpt": null
+ },
+ "videos": [
+  {
+   "no": 1,
+   "slug": "01-tricolor",
+   "topic": "Tricolor (2002)",
+   "title": "A Ship Sank. Then 2 More Ships Hit the Wreck.",
+   "stage": "yayinda",
+   "video": false,
+   "youtube_url": "https://youtube.com/shorts/odtvls263lM",
+   "ordered_at": null,
+   "ready_at": null,
+   "approved_at": null,
+   "published_at": null
+  },
+  {
+   "no": 2,
+   "slug": "02-golden-ray",
+   "topic": "Golden Ray (2019)",
+   "title": "Trapped Inside a Capsized Ship. Then Someone Knocked.",
+   "hook": "Tap. Tap. Tap. Rescuers were knocking on the hull of a capsized ship. And something knocked back.",
+   "stage": "yayin",
+   "seconds": 42.3,
+   "video": true,
+   "youtube_url": null,
+   "ordered_at": null,
+   "ready_at": "2026-11-21T08:17:10Z",
+   "approved_at": "2026-11-21T08:37:26Z",
+   "published_at": null
+  },
+  {
+   "no": 3,
+   "slug": "03-ever-given",
+   "topic": "Ever Given (2021)",
+   "title": "The Moon Freed the Ship That Blocked the Suez Canal.",
+   "hook": "How do you move a ship that weighs over two hundred thousand tonnes, when she is stuck in sand?",
+   "stage": "yayin",
+   "seconds": 43.0,
+   "video": true,
+   "youtube_url": null,
+   "ordered_at": null,
+   "ready_at": "2026-11-21T08:17:12Z",
+   "approved_at": "2026-11-21T08:37:28Z",
+   "published_at": null
+  }
+ ]
+}
