@@ -1,78 +1,239 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-21T22:30:00Z",
+ "updated_at": "2026-11-21T23:15:00Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk gelir 6–12 ay sonra; bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
-  "summary": "Aşama 1'in ilk haftası. Üç Shorts yayında (19 ve 21 Kasım). Üretim ofis düzeniyle yürüyor: Claude hazırlar, ChatGPT görselleri üretir ve yayınlar, sen onaylarsın.",
+  "summary": "Aşama 1'in ilk haftası. Üç Shorts yayında (19 ve 21 Kasım). 22 Kasım kararı: 04'ten itibaren Shorts \"nasıl / neden\" soru biçiminde (niş araştırması: olay anlatımı nişin en az izlenen şeridi). Plan artık bu sekmeden izleniyor.",
   "next": [
-   "04'ün siparişi açılır (23 Kasım civarı); video hazır olunca bu sayfadan onaylarsın.",
+   "04'ün siparişi soru biçimiyle açılır (23 Kasım civarı); video hazır olunca bu sayfadan onaylarsın.",
    "23 Kasım 19.00: Shorts 02 ve 03'ün 48 saatlik sonuçları.",
-   "Üç videonun sonuçlarıyla açılış biçimi ve video süresi değerlendirilir."
+   "04–08 soru biçimiyle çıkar; 48 saatlik izlenmeleri 01–03 ile karşılaştırılır."
   ]
  },
  "calendar": [
-  {"date": "2026-11-22", "what": "Claude görevi ilk kez Opus 5.5 ile çalışır (09.10)", "you": null},
-  {"date": "2026-11-23", "what": "04'ün siparişi açılır, görseller ve video hazırlanır", "you": "Videoyu izleyip onaylamak"},
-  {"date": "2026-11-23", "what": "Shorts 02 ve 03'ün 48 saatlik sonuçları", "you": "Rakamları iletmek"},
-  {"date": "2026-11-26", "what": "05 hazırlanır (yaklaşık)", "you": "Onay"},
-  {"date": "2026-12-16", "what": "Aşama 1 sonu: ay değerlendirmesi, en iyi 2 konu seçilir", "you": "Karar"}
+  {
+   "date": "2026-11-22",
+   "what": "Claude görevi ilk kez Opus 5.5 ve soru biçimiyle çalışır (09.10)",
+   "you": null
+  },
+  {
+   "date": "2026-11-23",
+   "what": "04'ün siparişi açılır, görseller ve video hazırlanır",
+   "you": "Videoyu izleyip onaylamak"
+  },
+  {
+   "date": "2026-11-23",
+   "what": "Shorts 02 ve 03'ün 48 saatlik sonuçları",
+   "you": "Rakamları iletmek"
+  },
+  {
+   "date": "2026-11-26",
+   "what": "05 hazırlanır (yaklaşık)",
+   "you": "Onay"
+  },
+  {
+   "date": "2026-12-16",
+   "what": "Aşama 1 sonu: ay değerlendirmesi, en iyi 2 konu seçilir",
+   "you": "Karar"
+  }
  ],
  "phases": [
-  {"title": "Hazırlık", "items": [
-   {"text": "Piyasa araştırması ve konu seçimi: gerçek deniz hikâyeleri, İngilizce, yüzsüz", "done": true},
-   {"text": "Kanal adı: Dry Dock Stories, @drydockstories", "done": true},
-   {"text": "Kanal ayarları: çocuklara özel değil, kategori Eğitim, açıklama", "done": true},
-   {"text": "Ücretsiz üretim yolu: ChatGPT görsel + Kokoro ses + bulutta kurgu", "done": true},
-   {"text": "Ajan ofisi: Claude ve ChatGPT zamanlanmış görevleri, Drive köprüsü", "done": true},
-   {"text": "Pusulab'da YouTube sayfası: durum, onay düğmeleri, sayfa içi oynatma", "done": true},
-   {"text": "Telefon doğrulaması (youtube.com/verify)", "done": false},
-   {"text": "Profil resmi ve kapak görseli", "done": false}
-  ]},
-  {"title": "Aşama 1: Öğrenme", "period": "19 Kasım – 16 Aralık 2026", "current": true,
-   "note": "Haftada 3 Shorts, toplam 12. Amaç: akışı oturtmak ve hangi konu ve açılışın tuttuğunu görmek.", "items": [
-   {"text": "Shorts 01: Tricolor (yayınlandı, 19 Kasım)", "done": true},
-   {"text": "Shorts 01 sonuçlarını kaydet", "done": true},
-   {"text": "Shorts 02: Golden Ray (yayınlandı, 21 Kasım)", "done": true},
-   {"text": "Shorts 03: Ever Given (yayınlandı, 21 Kasım)", "done": true},
-   {"text": "Shorts 02 ve 03 sonuçlarını kaydet (23 Kasım)", "done": false},
-   {"text": "2. hafta: 3 yeni konu, sonuçlara göre seçilir", "done": false},
-   {"text": "3. hafta: 3 Shorts", "done": false},
-   {"text": "4. hafta: 3 Shorts", "done": false},
-   {"text": "Ay sonu değerlendirmesi: en iyi 2 konu uzun videoya taşınır", "done": false}
-  ]},
-  {"title": "Aşama 2: İlk uzun videolar", "period": "Aralık 2026 – Ocak 2027",
-   "note": "İki haftada bir 5–8 dakikalık video; Shorts haftada 2–3 devam eder. Shorts sonunda uzun videoya yönlendirme yapılır.", "items": [
-   {"text": "Uzun video 1: en çok tutan Shorts konusunun geniş hâli"},
-   {"text": "Uzun video 2"}, {"text": "Uzun video 3"}, {"text": "Uzun video 4"},
-   {"text": "Kapak görseli (thumbnail) şablonu"}
-  ]},
-  {"title": "Aşama 3: Büyüme", "period": "Şubat 2027'den itibaren",
-   "note": "Haftada bir 10–15 dakikalık video. Gelir başlayınca ses kalitesi ve uzman kontrolü artırılır.", "items": [
-   {"text": "Haftalık uzun video düzenine geç"},
-   {"text": "500 abone + 3.000 saat: erken seviye başvurusu"},
-   {"text": "1.000 abone + 8.000 saat: tam YPP başvurusu"}
-  ]},
-  {"title": "Aşama 4: Gelir ve çeşitlendirme", "items": [
-   {"text": "Otomatik dublaj ile diğer dillere açılma"},
-   {"text": "Ücretli seslendirme (ElevenLabs), gelir başlayınca"},
-   {"text": "Sponsor ve denizcilik sektörü iş birlikleri"}
-  ]}
+  {
+   "title": "Hazırlık",
+   "items": [
+    {
+     "text": "Piyasa araştırması ve konu seçimi: gerçek deniz hikâyeleri, İngilizce, yüzsüz",
+     "done": true
+    },
+    {
+     "text": "Kanal adı: Dry Dock Stories, @drydockstories",
+     "done": true
+    },
+    {
+     "text": "Kanal ayarları: çocuklara özel değil, kategori Eğitim, açıklama",
+     "done": true
+    },
+    {
+     "text": "Ücretsiz üretim yolu: ChatGPT görsel + Kokoro ses + bulutta kurgu",
+     "done": true
+    },
+    {
+     "text": "Ajan ofisi: Claude ve ChatGPT zamanlanmış görevleri, Drive köprüsü",
+     "done": true
+    },
+    {
+     "text": "Pusulab'da YouTube sayfası: durum, onay düğmeleri, sayfa içi oynatma",
+     "done": true
+    },
+    {
+     "text": "Pusulab'da Plan sekmesi (bu sayfa)",
+     "done": true
+    },
+    {
+     "text": "Telefon doğrulaması (youtube.com/verify)",
+     "done": false
+    },
+    {
+     "text": "Profil resmi ve kapak görseli",
+     "done": false
+    }
+   ]
+  },
+  {
+   "title": "Aşama 1: Öğrenme",
+   "period": "19 Kasım – 16 Aralık 2026",
+   "current": true,
+   "note": "Haftada 3 Shorts, toplam 12. Amaç: akışı oturtmak ve hangi konu ve açılışın tuttuğunu görmek.",
+   "items": [
+    {
+     "text": "Shorts 01: Tricolor (yayınlandı, 19 Kasım)",
+     "done": true
+    },
+    {
+     "text": "Shorts 01 sonuçlarını kaydet",
+     "done": true
+    },
+    {
+     "text": "Shorts 02: Golden Ray (yayınlandı, 21 Kasım)",
+     "done": true
+    },
+    {
+     "text": "Shorts 03: Ever Given (yayınlandı, 21 Kasım)",
+     "done": true
+    },
+    {
+     "text": "Shorts 02 ve 03 sonuçlarını kaydet (23 Kasım)",
+     "done": false
+    },
+    {
+     "text": "Niş araştırması: soru biçimi kararı (22 Kasım)",
+     "done": true
+    },
+    {
+     "text": "04–08 soru biçimiyle; sonuçları 01–03 ile karşılaştır",
+     "done": false
+    },
+    {
+     "text": "2. hafta: 3 yeni konu, sonuçlara göre seçilir",
+     "done": false
+    },
+    {
+     "text": "3. hafta: 3 Shorts",
+     "done": false
+    },
+    {
+     "text": "4. hafta: 3 Shorts",
+     "done": false
+    },
+    {
+     "text": "Ay sonu değerlendirmesi: en iyi 2 konu uzun videoya taşınır",
+     "done": false
+    }
+   ]
+  },
+  {
+   "title": "Aşama 2: İlk uzun videolar",
+   "period": "Aralık 2026 – Ocak 2027",
+   "note": "İki haftada bir 5–8 dakikalık video; Shorts haftada 2–3 devam eder. Shorts sonunda uzun videoya yönlendirme yapılır.",
+   "items": [
+    {
+     "text": "Uzun video 1: en çok tutan Shorts konusunun geniş hâli"
+    },
+    {
+     "text": "Uzun video 2"
+    },
+    {
+     "text": "Uzun video 3"
+    },
+    {
+     "text": "Uzun video 4"
+    },
+    {
+     "text": "Kapak görseli (thumbnail) şablonu"
+    }
+   ]
+  },
+  {
+   "title": "Aşama 3: Büyüme",
+   "period": "Şubat 2027'den itibaren",
+   "note": "Haftada bir 10–15 dakikalık video. Gelir başlayınca ses kalitesi ve uzman kontrolü artırılır.",
+   "items": [
+    {
+     "text": "Haftalık uzun video düzenine geç"
+    },
+    {
+     "text": "500 abone + 3.000 saat: erken seviye başvurusu"
+    },
+    {
+     "text": "1.000 abone + 8.000 saat: tam YPP başvurusu"
+    }
+   ]
+  },
+  {
+   "title": "Aşama 4: Gelir ve çeşitlendirme",
+   "items": [
+    {
+     "text": "Otomatik dublaj ile diğer dillere açılma"
+    },
+    {
+     "text": "Ücretli seslendirme (ElevenLabs), gelir başlayınca"
+    },
+    {
+     "text": "Sponsor ve denizcilik sektörü iş birlikleri"
+    }
+   ]
+  }
  ],
  "videos": [
-  {"no": 1, "topic": "Tricolor (2002)", "opening": "Tarih ve olay", "published": "2026-11-19", "youtube_url": "https://youtube.com/shorts/odtvls263lM",
-   "views_48h": 25, "views_total": 45, "viewed_pct": 58.5, "avg_view_pct": 30, "likes": 0, "subscribers": 0,
-   "note": "Ort. izlenme Studio dışa aktarımından hesap (15 sn / 50 sn). 21/25 görüntüleme Shorts akışından. Elle altyazı."},
-  {"no": 2, "topic": "Golden Ray (2019)", "opening": "Ses (tak tak)", "published": "2026-11-21", "youtube_url": "https://youtube.com/shorts/Ug5WfxfCH1s",
-   "note": "Kurtarma hikâyesi. Ofis düzeniyle üretilen ilk video. Sonuçlar 23 Kasım."},
-  {"no": 3, "topic": "Ever Given (2021)", "opening": "Soru", "published": "2026-11-21", "youtube_url": "https://youtube.com/shorts/cCe3WMbFzcY",
-   "note": "Mühendislik hikâyesi. Sonuçlar 23 Kasım."}
+  {
+   "no": 1,
+   "topic": "Tricolor (2002)",
+   "opening": "Tarih ve olay",
+   "published": "2026-11-19",
+   "youtube_url": "https://youtube.com/shorts/odtvls263lM",
+   "views_48h": 25,
+   "views_total": 45,
+   "viewed_pct": 58.5,
+   "avg_view_pct": 30,
+   "likes": 0,
+   "subscribers": 0,
+   "note": "Ort. izlenme Studio dışa aktarımından hesap (15 sn / 50 sn). 21/25 görüntüleme Shorts akışından. Elle altyazı."
+  },
+  {
+   "no": 2,
+   "topic": "Golden Ray (2019)",
+   "opening": "Ses (tak tak)",
+   "published": "2026-11-21",
+   "youtube_url": "https://youtube.com/shorts/Ug5WfxfCH1s",
+   "note": "Kurtarma hikâyesi. Ofis düzeniyle üretilen ilk video. Sonuçlar 23 Kasım."
+  },
+  {
+   "no": 3,
+   "topic": "Ever Given (2021)",
+   "opening": "Soru",
+   "published": "2026-11-21",
+   "youtube_url": "https://youtube.com/shorts/cCe3WMbFzcY",
+   "note": "Mühendislik hikâyesi. Sonuçlar 23 Kasım."
+  }
  ],
  "thresholds": [
-  {"name": "Erken seviye", "need": "500 abone + 3.000 saat uzun video izlenmesi ya da 90 günde 3 milyon Shorts izlenmesi", "unlocks": "Kanal üyeliği, Süper Teşekkürler gibi hayran gelirleri"},
-  {"name": "Tam YPP (1 Şubat 2027'ye kadar)", "need": "1.000 abone + 4.000 saat ya da 90 günde 10 milyon Shorts izlenmesi", "unlocks": "Reklam geliri"},
-  {"name": "Tam YPP (1 Şubat 2027'den sonra)", "need": "8.000 saat ya da 90 günde 20 milyon Shorts izlenmesi", "unlocks": "Reklam geliri"}
+  {
+   "name": "Erken seviye",
+   "need": "500 abone + 3.000 saat uzun video izlenmesi ya da 90 günde 3 milyon Shorts izlenmesi",
+   "unlocks": "Kanal üyeliği, Süper Teşekkürler gibi hayran gelirleri"
+  },
+  {
+   "name": "Tam YPP (1 Şubat 2027'ye kadar)",
+   "need": "1.000 abone + 4.000 saat ya da 90 günde 10 milyon Shorts izlenmesi",
+   "unlocks": "Reklam geliri"
+  },
+  {
+   "name": "Tam YPP (1 Şubat 2027'den sonra)",
+   "need": "8.000 saat ya da 90 günde 20 milyon Shorts izlenmesi",
+   "unlocks": "Reklam geliri"
+  }
  ],
  "open": [
   "Telefon doğrulaması (youtube.com/verify) ve kimlik doğrulamasının sonucu",
