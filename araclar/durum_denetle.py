@@ -9,6 +9,7 @@ import sys
 SLUG = re.compile(r'[0-9]{2,3}-[a-z0-9]+(?:-[a-z0-9]+){0,7}')
 YOUTUBE = re.compile(r'https://(?:(?:www\.)?youtube\.com/(?:shorts/|watch\?v=)|youtu\.be/)[A-Za-z0-9_-]{6,20}')
 CONTROL = re.compile(r'[\x00-\x1f\x7f]')
+SHA = re.compile(r'[0-9a-f]{64}')
 STAGES = ('siparis', 'kurgu', 'onay', 'duzeltme', 'beklemede', 'yayin', 'yayinda')
 TIMES = ('ordered_at', 'ready_at', 'approved_at', 'published_at')
 MAX_BYTES, MAX_VIDEOS = 60_000, 60
@@ -80,6 +81,13 @@ def check(raw):
             raise ValueError('%s: seconds 1–3600 arasında sayı olmalı.' % slug)
         if x.get('video') not in (None, True, False):
             raise ValueError('%s: video true ya da false olmalı.' % slug)
+        size, sha = x.get('bytes'), x.get('sha256')
+        if size is not None and (isinstance(size, bool) or not isinstance(size, int) or not 1 <= size <= 300_000_000):
+            raise ValueError('%s: bytes 1–300.000.000 arasında tam sayı olmalı.' % slug)
+        if sha is not None and (not isinstance(sha, str) or not SHA.fullmatch(sha)):
+            raise ValueError('%s: sha256 64 haneli küçük harfli onaltılık olmalı.' % slug)
+        if x['stage'] == 'onay' and (size is None or sha is None):
+            raise ValueError('%s: onay bekleyen videoda bytes ve sha256 gerekli (sitedeki karar düğmeleri bunlara bağlı).' % slug)
         for key in TIMES:
             when(x.get(key), slug + ': ' + key)
     return len(videos)
