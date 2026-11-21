@@ -35,3 +35,14 @@ Kişisel bilgi, belirteç, Drive bağlantısı ya da e-posta yazılmaz. Dosya he
 - Tarihler saat dilimli ISO biçiminde; bilinmeyen tarih `null` yazılır, tahmin edilmez.
 - `runs.claude`: bu dosyayı yazan çalışmanın saati. `runs.chatgpt`: bilinen son ChatGPT çalışması; bilinmiyorsa `null`.
 - Yazdıktan sonra: `python3 -I araclar/durum_denetle.py durum.json`
+
+# plan.json
+
+Kanalın uzun vadeli planı ve video takip tablosu. Depo kökünde durur; site "Plan" sekmesinde gösterir.
+Biçim ve kurallar `araclar/plan_denetle.py` içindeki `parse` işlevindedir (sitedeki doğrulamanın aynısı).
+Zorunlu: `"schema": 1`, `"kind": "plan"`, `updated_at`. Bölümler: `title`, `goal`, `now` (`summary`, `next`),
+`calendar` (`date`, `what`, `you`), `phases` (`title`, `period`, `note`, `current`, `items`: `text`, `done`),
+`videos` (`no`, `topic`, `opening`, `published`, `youtube_url`, `views_48h`, `views_total`, `viewed_pct`,
+`avg_view_pct`, `likes`, `subscribers`, `note`), `thresholds` (`name`, `need`, `unlocks`), `open`.
+Rakam yalnız Said'in ilettiği ya da Studio dışa aktarımından okunan değerdir; bilinmeyen değer yazılmaz.
+Yazdıktan sonra: `python3 -I araclar/plan_denetle.py plan.json`
