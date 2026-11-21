@@ -1,10 +1,10 @@
 {
  "schema": 1,
- "updated_at": "2026-11-21T13:12:13Z",
+ "updated_at": "2026-11-21T14:09:23Z",
  "channel": "Dry Dock Stories",
  "runs": {
-  "claude": "2026-11-21T13:12:13Z",
-  "chatgpt": "2026-11-21T07:57:00Z"
+  "claude": "2026-11-21T14:09:23Z",
+  "chatgpt": "2026-11-21T14:07:58Z"
  },
  "videos": [
   {
@@ -26,14 +26,14 @@
    "topic": "Golden Ray (2019)",
    "title": "Trapped Inside a Capsized Ship. Then Someone Knocked.",
    "hook": "Tap. Tap. Tap. Rescuers were knocking on the hull of a capsized ship. And something knocked back.",
-   "stage": "yayin",
+   "stage": "yayinda",
    "seconds": 42.3,
-   "video": true,
-   "youtube_url": null,
+   "video": false,
+   "youtube_url": "https://youtube.com/shorts/Ug5WfxfCH1s",
    "ordered_at": null,
    "ready_at": "2026-11-21T08:17:10Z",
    "approved_at": "2026-11-21T08:37:26Z",
-   "published_at": null
+   "published_at": "2026-11-21T14:07:55Z"
   },
   {
    "no": 3,
@@ -41,14 +41,14 @@
    "topic": "Ever Given (2021)",
    "title": "The Moon Freed the Ship That Blocked the Suez Canal.",
    "hook": "How do you move a ship that weighs over two hundred thousand tonnes, when she is stuck in sand?",
-   "stage": "yayin",
+   "stage": "yayinda",
    "seconds": 43.0,
-   "video": true,
-   "youtube_url": null,
+   "video": false,
+   "youtube_url": "https://youtube.com/shorts/cCe3WMbFzcY",
    "ordered_at": null,
    "ready_at": "2026-11-21T08:17:12Z",
    "approved_at": "2026-11-21T08:37:28Z",
-   "published_at": null
+   "published_at": "2026-11-21T14:07:58Z"
   }
  ]
 }
