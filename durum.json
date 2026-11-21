@@ -1,10 +1,10 @@
 {
  "schema": 1,
- "updated_at": "2026-11-21T10:22:04Z",
+ "updated_at": "2026-11-21T13:12:13Z",
  "channel": "Dry Dock Stories",
  "runs": {
-  "claude": "2026-11-21T10:22:04Z",
-  "chatgpt": null
+  "claude": "2026-11-21T13:12:13Z",
+  "chatgpt": "2026-11-21T07:57:00Z"
  },
  "videos": [
   {
