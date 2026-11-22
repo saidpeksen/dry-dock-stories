@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-21T23:40:00Z",
+ "updated_at": "2026-11-22T01:45:00Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk gelir 6–12 ay sonra; bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
@@ -72,8 +72,8 @@
      "done": true
     },
     {
-     "text": "Telefon doğrulaması (youtube.com/verify; 22 Kasım'da yeniden gönderildi)",
-     "done": false
+     "text": "Telefon doğrulaması: orta ve gelişmiş özellikler etkin (22 Kasım)",
+     "done": true
     },
     {
      "text": "Profil resmi, kapak görseli ve filigran (22 Kasım)",
@@ -236,7 +236,6 @@
   }
  ],
  "open": [
-  "Telefon doğrulaması (youtube.com/verify): 22 Kasım'da yeniden gönderildi, cevap bekleniyor",
   "Shorts izlenme süresi saat eşiğine sayılmaz; gelir için uzun videolar şart"
  ]
 }
