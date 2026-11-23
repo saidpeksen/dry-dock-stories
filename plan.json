@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-23T13:21:43Z",
+ "updated_at": "2026-11-23T19:58:00Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk gelir 6–12 ay sonra; bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
@@ -100,7 +100,7 @@
     },
     {
      "text": "Shorts 02 ve 03 sonuçlarını kaydet (23 Kasım, ChatGPT Studio'dan okur)",
-     "done": false
+     "done": true
     },
     {
      "text": "Niş araştırması: soru biçimi kararı (22 Kasım)",
@@ -202,7 +202,12 @@
    "opening": "Ses (tak tak)",
    "published": "2026-11-21",
    "youtube_url": "https://youtube.com/shorts/Ug5WfxfCH1s",
-   "note": "Kurtarma hikâyesi. Ofis düzeniyle üretilen ilk video. Sonuçlar 23 Kasım."
+   "note": "Kurtarma hikâyesi. Ofis düzeniyle üretilen ilk video. 48 saat rakamları ChatGPT'nin Studio'dan okuduğu değer (50 saatte).",
+   "views_48h": 56,
+   "viewed_pct": 61.0,
+   "avg_view_pct": 79,
+   "likes": 2,
+   "subscribers": 0
   },
   {
    "no": 3,
@@ -210,7 +215,12 @@
    "opening": "Soru",
    "published": "2026-11-21",
    "youtube_url": "https://youtube.com/shorts/cCe3WMbFzcY",
-   "note": "Mühendislik hikâyesi. Sonuçlar 23 Kasım."
+   "note": "Mühendislik hikâyesi. 48 saat rakamları ChatGPT'nin Studio'dan okuduğu değer (50 saatte).",
+   "views_48h": 27,
+   "viewed_pct": 59.1,
+   "avg_view_pct": 25.9,
+   "likes": 1,
+   "subscribers": 0
   }
  ],
  "thresholds": [
