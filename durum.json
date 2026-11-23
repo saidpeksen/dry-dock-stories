@@ -1,10 +1,10 @@
 {
  "schema": 1,
- "updated_at": "2026-11-23T06:14:00Z",
+ "updated_at": "2026-11-23T13:21:43Z",
  "channel": "Dry Dock Stories",
  "runs": {
-  "claude": "2026-11-23T06:14:00Z",
-  "chatgpt": "2026-11-21T14:07:58Z"
+  "claude": "2026-11-23T13:21:43Z",
+  "chatgpt": "2026-11-23T12:08:21Z"
  },
  "videos": [
   {
@@ -56,13 +56,16 @@
    "topic": "Batık römorkörde hava cebi (2013)",
    "title": "How Did a Cook Survive Inside a Sunken Tugboat?",
    "hook": "A diver searched a sunken tug, expecting no survivors. Then, in the dark, a hand moved.",
-   "stage": "siparis",
-   "video": false,
+   "stage": "onay",
+   "video": true,
    "youtube_url": null,
    "ordered_at": "2026-11-23T06:13:36Z",
-   "ready_at": null,
+   "ready_at": "2026-11-23T13:21:33Z",
    "approved_at": null,
-   "published_at": null
+   "published_at": null,
+   "seconds": 39.5,
+   "bytes": 23321505,
+   "sha256": "dc34087a7530e955ca616777865638e631a37299dd0b1bbfc92c1922c7e949a2"
   }
  ]
 }
