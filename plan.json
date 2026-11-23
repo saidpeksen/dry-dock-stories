@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-23T19:58:00Z",
+ "updated_at": "2026-11-23T22:18:00Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk gelir 6–12 ay sonra; bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
@@ -131,7 +131,7 @@
   {
    "title": "Aşama 2: İlk uzun videolar",
    "period": "Aralık 2026 – Ocak 2027",
-   "note": "İki haftada bir 5–8 dakikalık video; Shorts haftada 2–3 devam eder. Shorts sonunda uzun videoya yönlendirme yapılır.",
+   "note": "İki haftada bir 5–8 dakikalık video; Shorts haftada 2–3 devam eder. Shorts sonunda uzun videoya yönlendirme yapılır. Kalıp (24 Kasım): yapay zekâ görselleri tek ve tutarlı bir tarzda, anlatıcı ses, bölümlere ayrılmış yapı, soru başlığı.",
    "items": [
     {
      "text": "Uzun video 1: en çok tutan Shorts konusunun geniş hâli"
@@ -147,6 +147,12 @@
     },
     {
      "text": "Kapak görseli (thumbnail) şablonu"
+    },
+    {
+     "text": "Uzun video kalıbını kur: tutarlı görsel tarzı, anlatıcı ses, bölümler (örnek: Golden Ray kurtarması 6–8 dk)"
+    },
+    {
+     "text": "Otomatik dublajı aç (Aşama 4'ten erkene alındı): uzun videolar Türkçe, İspanyolca, Portekizce izleyiciye de ulaşsın"
     }
    ]
   },
@@ -169,9 +175,6 @@
   {
    "title": "Aşama 4: Gelir ve çeşitlendirme",
    "items": [
-    {
-     "text": "Otomatik dublaj ile diğer dillere açılma"
-    },
     {
      "text": "Ücretli seslendirme (ElevenLabs), gelir başlayınca"
     },
@@ -241,6 +244,7 @@
   }
  ],
  "open": [
-  "Shorts izlenme süresi saat eşiğine sayılmaz; gelir için uzun videolar şart"
+  "Shorts izlenme süresi saat eşiğine sayılmaz; gelir için uzun videolar şart",
+  "Kitap–film biçimi: yalnız telif süresi dolmuş deniz romanlarıyla (Moby-Dick, Denizler Altında Yirmi Bin Fersah); 05–08 sonuçlarından sonra tek deneme olarak değerlendirilecek"
  ]
 }
