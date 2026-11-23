@@ -1,26 +1,21 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-22T01:45:00Z",
+ "updated_at": "2026-11-23T06:14:00Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk gelir 6–12 ay sonra; bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
   "summary": "Aşama 1'in ilk haftası. Üç Shorts yayında (19 ve 21 Kasım). 22 Kasım kararı: 04'ten itibaren Shorts \"nasıl / neden\" soru biçiminde (niş araştırması: olay anlatımı nişin en az izlenen şeridi). Plan artık bu sekmeden izleniyor.",
   "next": [
-   "04'ün siparişi soru biçimiyle açılır (23 Kasım civarı); video hazır olunca bu sayfadan onaylarsın.",
+   "04 (soru biçimi, hayatta kalma) siparişi açıldı; video bugün 16.10'da hazır olur, akşam 19.00'dan önce bu sayfadan onaylarsın.",
    "23 Kasım 19.00: ChatGPT, 02 ve 03'ün 48 saatlik rakamlarını Studio'dan okur; Claude görevi Plan'a işler.",
-   "04–08 soru biçimiyle çıkar; 48 saatlik izlenmeleri 01–03 ile karşılaştırılır."
+   "05'in siparişi 25 Kasım sabahı açılır (gün aşırı düzen)."
   ]
  },
  "calendar": [
   {
-   "date": "2026-11-22",
-   "what": "Claude görevi ilk kez Opus 5.5 ve soru biçimiyle çalışır (09.10)",
-   "you": null
-  },
-  {
    "date": "2026-11-23",
-   "what": "04'ün siparişi açılır, görseller ve video hazırlanır",
+   "what": "04 hazırlanır: sipariş açıldı (09.10), görseller 15.00, video 16.10",
    "you": "Videoyu izleyip onaylamak"
   },
   {
@@ -29,9 +24,9 @@
    "you": null
   },
   {
-   "date": "2026-11-26",
-   "what": "05 hazırlanır (yaklaşık)",
-   "you": "Onay"
+   "date": "2026-11-25",
+   "what": "05'in siparişi açılır ve video hazırlanır (gün aşırı düzen)",
+   "you": "Videoyu izleyip onaylamak"
   },
   {
    "date": "2026-12-16",

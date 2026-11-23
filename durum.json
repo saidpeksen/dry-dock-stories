@@ -1,9 +1,9 @@
 {
  "schema": 1,
- "updated_at": "2026-11-22T13:12:09Z",
+ "updated_at": "2026-11-23T06:14:00Z",
  "channel": "Dry Dock Stories",
  "runs": {
-  "claude": "2026-11-22T13:12:09Z",
+  "claude": "2026-11-23T06:14:00Z",
   "chatgpt": "2026-11-21T14:07:58Z"
  },
  "videos": [
@@ -49,6 +49,20 @@
    "ready_at": "2026-11-21T08:17:12Z",
    "approved_at": "2026-11-21T08:37:28Z",
    "published_at": "2026-11-21T14:07:58Z"
+  },
+  {
+   "no": 4,
+   "slug": "04-air-pocket",
+   "topic": "Batık römorkörde hava cebi (2013)",
+   "title": "How Did a Cook Survive Inside a Sunken Tugboat?",
+   "hook": "A diver searched a sunken tug, expecting no survivors. Then, in the dark, a hand moved.",
+   "stage": "siparis",
+   "video": false,
+   "youtube_url": null,
+   "ordered_at": "2026-11-23T06:13:36Z",
+   "ready_at": null,
+   "approved_at": null,
+   "published_at": null
   }
  ]
 }
