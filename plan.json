@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-24T11:55:00Z",
+ "updated_at": "2026-11-24T12:20:00Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk gelir 6–12 ay sonra; bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
@@ -172,7 +172,7 @@
      "text": "Otomatik dublajı aç (Aşama 4'ten erkene alındı): uzun videolar Türkçe, İspanyolca, Portekizce izleyiciye de ulaşsın"
     },
     {
-     "text": "Harita animasyonu katmanı (Remotion, ücretsiz): rota ve olay yeri haritada çizilir; ilk deneme Ever Given",
+     "text": "Harita animasyonu (Remotion, ücretsiz): kuruldu, Ever Given ile denendi (24 Kasım); Shorts'larda kullanım için onayın bekleniyor",
      "done": false
     }
    ]
