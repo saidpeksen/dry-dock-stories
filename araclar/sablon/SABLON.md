@@ -39,3 +39,11 @@ süresi bu ağırlıkla paylaştırılır; cümle içindeki virgül ve noktalar 
 
 Temiz klondan, bulut oturumunda, Ever Given örneğiyle (`araclar/harita/ornek-ever-given.json`): süre, çözünürlük,
 ses düzeyi ve altyazı denetlendi. Sonuç `SABLON.md`'nin sonunda.
+
+### Sonuç: geçti
+
+- Temiz klon (cb18369), `kur.sh` 10 sn (harita ve şablon paketleri kuruldu), `kurgu.py` 6 dk.
+- Video: 44,1 sn; 1080×1920; 30 fps; H.264 yuv420p (standart aralık); AAC 48 kHz.
+- Ses düzeyi: −15,2 LUFS (hedef −17 ile −13), tepe −4,4 dBFS.
+- Altyazı: 29 parça, 119 kelime; karelerde okunuyor, konuşulan kelime vurgulu, alt üçte birde. Filigran sol üstte.
+- Harita bölümü (blok 2) şablonun içinde çizildi.
