@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-24T11:45:00Z",
+ "updated_at": "2026-11-24T11:55:00Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk gelir 6–12 ay sonra; bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
@@ -170,6 +170,10 @@
     },
     {
      "text": "Otomatik dublajı aç (Aşama 4'ten erkene alındı): uzun videolar Türkçe, İspanyolca, Portekizce izleyiciye de ulaşsın"
+    },
+    {
+     "text": "Harita animasyonu katmanı (Remotion, ücretsiz): rota ve olay yeri haritada çizilir; ilk deneme Ever Given",
+     "done": false
     }
    ]
   },
@@ -273,6 +277,8 @@
   "Biri tutar biri tutmazsa → biçim düzeltilip Aşama 1 iki hafta uzar. Ortalama 30 görüntülemenin ve %35 izlenmenin altı → dur, konu/biçim yeniden değerlendirilir.",
   "Karşılaştırma tabanı 01–03: ortalama 36 görüntüleme, izlemeyi seçen %59,5, ortalama izlenme %45. Herhangi bir video 48 saatte 200+ görüntülerse ayrıca 'devam' sayılır.",
   "Shorts izlenme süresi saat eşiğine sayılmaz; gelir için uzun videolar şart",
-  "Kitap–film biçimi: yalnız telif süresi dolmuş deniz romanlarıyla (Moby-Dick, Denizler Altında Yirmi Bin Fersah); 05–08 sonuçlarından sonra tek deneme olarak değerlendirilecek"
+  "Kitap–film biçimi: yalnız telif süresi dolmuş deniz romanlarıyla (Moby-Dick, Denizler Altında Yirmi Bin Fersah); 05–08 sonuçlarından sonra tek deneme olarak değerlendirilecek",
+  "Sabır kuralı: tek kanalda 20–30 video görülmeden konu ya da kanal hakkında kesin karar yok.",
+  "İleride: tutan format kanıtlanınca Almanca ve İspanyolca izleyiciye (önce otomatik dublaj). Özgün ses ve görsel dil öncelik."
  ]
 }
