@@ -4,6 +4,8 @@ Kullanım: python3 -I make_short.py spec.json cikis_klasoru
 spec.json: {"voice":"am_michael","parca_mb":2.8,"onizleme_mb":2.9,
             "blocks":[{"image":"1.jpg","text":"..."}, ...]}
 Her blok bir görsele karşılık gelir; metin cümlelere bölünüp sırayla seslendirilir.
+Harita bloğu: görsel yerine {"map": {...}, "text": "..."}; harita araclar/harita ile (Remotion) çizilir,
+biçimi araclar/harita/HARITA.md'de. Blokta "image" de varsa harita üretilemediğinde görsele düşülür.
 Çıktılar: video.mp4 (tam kalite ana kopya), video-parca-NN.bin (köprü için bölünmüş ana kopya),
 onizleme.mp4 (yalnız onay için izleme kopyası, sıkıştırılmış)."""
 import hashlib, json, re, subprocess, sys, os
@@ -69,6 +71,24 @@ def ses_duzeyi(src, dst, I=-14.0, TP=-1.5, LRA=11.0):
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-af", af, "-ar", "48000", "-c:a", "pcm_s16le", dst], check=True)
 
 
+HARITA = os.environ.get("HARITA_DIZINI") or os.path.join(os.path.dirname(os.path.abspath(__file__)), "harita")
+
+def harita_bolumu(harita, frames, seg, out_dir, i):
+    """Harita bloğunu Remotion ile üretir (araclar/harita) ve diğer bölümlerle aynı ayarlara getirir."""
+    if not os.path.isdir(os.path.join(HARITA, "node_modules")):
+        subprocess.run(["npm", "ci", "--no-audit", "--no-fund", "--loglevel=error"], cwd=HARITA, check=True)
+    props = dict(harita); props["frames"] = frames
+    pj = os.path.abspath(os.path.join(out_dir, f"harita{i}.json")); json.dump(props, open(pj, "w"), ensure_ascii=False)
+    ham = os.path.abspath(os.path.join(out_dir, f"harita{i}_ham.mp4"))
+    r = subprocess.run(["node", os.path.join(HARITA, "render.mjs"), pj, ham], cwd=HARITA, capture_output=True, text=True)
+    if r.returncode != 0 or not os.path.isfile(ham):
+        raise RuntimeError("harita üretilemedi: " + (r.stderr or r.stdout)[-600:])
+    gecici = seg[:-4] + ".yarim.mp4"   # yarım kalan dosya tam sanılmasın
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", ham, "-vf", f"fps={FPS},scale={W}:{H}:out_range=tv,format=yuv420p",
+                    "-frames:v", str(frames), "-c:v", "libx264", "-crf", "12", "-preset", "veryfast",
+                    "-pix_fmt", "yuv420p", "-color_range", "tv", gecici], check=True)
+    os.replace(gecici, seg)
+
 def main(spec_path, out_dir):
     spec = json.load(open(spec_path)); os.makedirs(out_dir, exist_ok=True)
     base = os.path.dirname(os.path.abspath(spec_path))
@@ -102,11 +122,20 @@ def main(spec_path, out_dir):
             f.write(f"Dialogue: 0,{ts(s)},{ts(e)},D,,0,0,0,,{txt}\n")
     # görsel bölümleri
     bounds = [0.0] + [max(0.0, x - 0.12) for x in block_starts[1:]] + [total_dur]
-    segs = []
+    segs, harita_raporu = [], []
     for i, b in enumerate(spec["blocks"]):
         dur = bounds[i + 1] - bounds[i]; frames = max(1, round(dur * FPS))
-        z = f"1+0.12*on/{frames}" if i % 2 == 0 else f"1.12-0.12*on/{frames}"
         seg = os.path.join(out_dir, f"seg{i}.mp4"); segs.append(seg)
+        if b.get("map"):
+            try:
+                harita_bolumu(b["map"], frames, seg, out_dir, i)
+                harita_raporu.append({"blok": i + 1, "durum": "harita"})
+                continue
+            except Exception as e:  # harita üretilemezse varsa görsele düş, yoksa dur
+                if not b.get("image"):
+                    raise
+                harita_raporu.append({"blok": i + 1, "durum": "görsele düşüldü", "hata": str(e)[-300:]})
+        z = f"1+0.12*on/{frames}" if i % 2 == 0 else f"1.12-0.12*on/{frames}"
         vf = (f"scale={W*2}:{H*2}:force_original_aspect_ratio=increase,crop={W*2}:{H*2},"
               f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS}")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-loop", "1", "-i",
@@ -122,6 +151,8 @@ def main(spec_path, out_dir):
                     "-t", f"{total_dur:.2f}", out], check=True)
     rapor = {"video": out, "sure_sn": round(total_dur, 1), "boyut_mb": round(os.path.getsize(out) / 1e6, 2),
              "altyazi_sayisi": len(events), "bolum_sinirlari": [round(x, 1) for x in bounds]}
+    if harita_raporu:
+        rapor["harita"] = harita_raporu
     # köprü: ana kopyayı kayıpsız parçalara böl (bağlayıcı çağrısı başına ~3 MB sınırı)
     if spec.get("parca_mb"):
         rapor["kopru"] = split_file(out, spec["parca_mb"], out_dir)
