@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-11-24T13:16:46Z",
+ "updated_at": "2026-11-24T15:28:39Z",
  "channel": "Dry Dock Stories",
  "runs": {
   "claude": "2026-11-24T13:16:46Z",
@@ -66,6 +66,15 @@
    "seconds": 39.5,
    "bytes": 23321505,
    "sha256": "dc34087a7530e955ca616777865638e631a37299dd0b1bbfc92c1922c7e949a2"
+  }
+ ],
+ "tasks": [
+  {
+   "id": "olcut-onay",
+   "title": "16 Aralık devam/durma ölçütünü onayla ya da değiştir (Plan > Açık konular)",
+   "due": "2026-11-25",
+   "window": "09.30",
+   "done": false
   }
  ]
 }
