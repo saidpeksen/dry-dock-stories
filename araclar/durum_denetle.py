@@ -12,7 +12,9 @@ CONTROL = re.compile(r'[\x00-\x1f\x7f]')
 SHA = re.compile(r'[0-9a-f]{64}')
 STAGES = ('siparis', 'kurgu', 'onay', 'duzeltme', 'beklemede', 'yayin', 'yayinda')
 TIMES = ('ordered_at', 'ready_at', 'approved_at', 'published_at')
-MAX_BYTES, MAX_VIDEOS = 60_000, 60
+MAX_BYTES, MAX_VIDEOS, MAX_TASKS = 60_000, 60, 20
+TASK_KEY = re.compile(r'[a-z0-9]+(?:-[a-z0-9]+){0,7}')
+WINDOWS = ('09.30', '19.00')
 
 
 def text(v, name, limit, required=True):
@@ -90,6 +92,34 @@ def check(raw):
             raise ValueError('%s: onay bekleyen videoda bytes ve sha256 gerekli (sitedeki karar düğmeleri bunlara bağlı).' % slug)
         for key in TIMES:
             when(x.get(key), slug + ': ' + key)
+    tasks = data.get('tasks')
+    if tasks is not None:
+        if not isinstance(tasks, list) or len(tasks) > MAX_TASKS:
+            raise ValueError('tasks en fazla %d satırlık bir liste olmalı.' % MAX_TASKS)
+        ids = set()
+        for t in tasks:
+            if not isinstance(t, dict):
+                raise ValueError('tasks içindeki her satır bir nesne olmalı.')
+            key = t.get('id')
+            if not isinstance(key, str) or len(key) > 60 or not TASK_KEY.fullmatch(key):
+                raise ValueError('%r: tasks.id küçük harf, rakam ve tireden oluşmalı.' % (key,))
+            if key in ids:
+                raise ValueError('%s: görev iki kez yazılmış.' % key)
+            ids.add(key)
+            text(t.get('title'), key + ': title', 140)
+            due = t.get('due')
+            if due is not None:
+                try:
+                    ok = isinstance(due, str) and re.fullmatch(r'\d{4}-\d{2}-\d{2}', due) and datetime.date.fromisoformat(due)
+                except ValueError:
+                    ok = False
+                if not ok:
+                    raise ValueError('%s: due YYYY-AA-GG biçiminde olmalı.' % key)
+            if t.get('window') not in (None,) + WINDOWS:
+                raise ValueError('%s: window yalnız 09.30 ya da 19.00 olabilir.' % key)
+            if t.get('done') not in (None, True, False):
+                raise ValueError('%s: done true ya da false olmalı.' % key)
+            when(t.get('done_at'), key + ': done_at')
     return len(videos)
 
 

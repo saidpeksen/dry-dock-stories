@@ -34,6 +34,12 @@ Kişisel bilgi, belirteç, Drive bağlantısı ya da e-posta yazılmaz. Dosya he
   sitedeki Onayla / Düzelt / Beklet düğmeleri bu özete bağlanır.
 - Tarihler saat dilimli ISO biçiminde; bilinmeyen tarih `null` yazılır, tahmin edilmez.
 - `runs.claude`: bu dosyayı yazan çalışmanın saati. `runs.chatgpt`: bilinen son ChatGPT çalışması; bilinmiyorsa `null`.
+- `tasks` (isteğe bağlı, en çok 20): Said'den beklenen, video kararı olmayan işler; sitede "Senin işlerin" kartında
+  ve Bugün sekmesinde görünür. Biçim: `{"id": "olcut-onay", "title": "16 Aralık ölçütünü onayla (Plan > Açık konular)",
+  "due": "2026-11-25", "window": "09.30", "done": false}`. `id` küçük harf, rakam, tire; aynı işin `id`'si ve
+  başlığı değiştirilmez (sitedeki "Yaptım" işareti başlığa bağlıdır). `title` ne yapılacağını ve nereye
+  dokunulacağını yazar (en çok 140 karakter). `window` yalnız `09.30` ya da `19.00`. Biten iş `done: true` ile
+  işaretlenir ya da 7 gün sonra listeden çıkarılır. Onay bekleyen video için görev yazılmaz (karar kartı zaten çıkar).
 - Yazdıktan sonra: `python3 -I araclar/durum_denetle.py durum.json`
 
 # plan.json
