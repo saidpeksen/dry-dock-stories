@@ -1,32 +1,27 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-23T22:18:00Z",
+ "updated_at": "2026-11-24T06:12:06Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk gelir 6–12 ay sonra; bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
-  "summary": "Aşama 1'in ilk haftası. Üç Shorts yayında (19 ve 21 Kasım). 22 Kasım kararı: 04'ten itibaren Shorts \"nasıl / neden\" soru biçiminde (niş araştırması: olay anlatımı nişin en az izlenen şeridi). Plan artık bu sekmeden izleniyor.",
+  "summary": "Aşama 1'in ilk haftası. Dört Shorts yayında (19, 21 ve 23 Kasım). 22 Kasım kararı: 04'ten itibaren Shorts \"nasıl / neden\" soru biçiminde; 04 bu biçimin ilk videosu.",
   "next": [
-   "04 hazır (soru biçimi, hayatta kalma): videoyu izleyip bu sayfadan onayla; 19.00'dan önce onaylarsan bu akşam yayınlanır.",
-   "23 Kasım 19.00: ChatGPT, 02 ve 03'ün 48 saatlik rakamlarını Studio'dan okur; Claude görevi Plan'a işler.",
-   "05'in siparişi 25 Kasım sabahı açılır (gün aşırı düzen)."
+   "05'in siparişi 25 Kasım sabahı açılır; video aynı gün öğleden sonra hazır olur, akşam onayın beklenir.",
+   "25 Kasım akşamı: ChatGPT 04'ün 48 saatlik rakamlarını Studio'dan okur; Claude Plan'a işler (soru biçiminin ilk verisi).",
+   "16 Aralık: Aşama 1 değerlendirmesi, en iyi 2 konu seçilir."
   ]
  },
  "calendar": [
   {
-   "date": "2026-11-23",
-   "what": "04 hazırlanır: sipariş açıldı (09.10), görseller 15.00, video 16.10",
-   "you": "Videoyu izleyip onaylamak"
-  },
-  {
-   "date": "2026-11-23",
-   "what": "Shorts 02 ve 03'ün 48 saatlik sonuçları (ChatGPT okur, Claude işler)",
-   "you": null
-  },
-  {
    "date": "2026-11-25",
    "what": "05'in siparişi açılır ve video hazırlanır (gün aşırı düzen)",
    "you": "Videoyu izleyip onaylamak"
+  },
+  {
+   "date": "2026-11-25",
+   "what": "Shorts 04'ün 48 saatlik sonuçları (ChatGPT okur, Claude işler)",
+   "you": null
   },
   {
    "date": "2026-12-16",
@@ -105,6 +100,14 @@
     {
      "text": "Niş araştırması: soru biçimi kararı (22 Kasım)",
      "done": true
+    },
+    {
+     "text": "Shorts 04: How Did a Cook Survive Inside a Sunken Tugboat? (yayınlandı, 23 Kasım)",
+     "done": true
+    },
+    {
+     "text": "Shorts 04 sonuçlarını kaydet (25 Kasım, ChatGPT Studio'dan okur)",
+     "done": false
     },
     {
      "text": "04–08 soru biçimiyle; sonuçları 01–03 ile karşılaştır",
@@ -224,6 +227,14 @@
    "avg_view_pct": 25.9,
    "likes": 1,
    "subscribers": 0
+  },
+  {
+   "no": 4,
+   "topic": "How did a cook survive inside a sunken tugboat? (2013)",
+   "opening": "Tek bir an (karanlıkta kıpırdayan el); soru biçimi",
+   "published": "2026-11-23",
+   "youtube_url": "https://youtube.com/shorts/UIsvcQP7dhI",
+   "note": "Hayatta kalma sorusu. Soru biçimindeki ilk video."
   }
  ],
  "thresholds": [
