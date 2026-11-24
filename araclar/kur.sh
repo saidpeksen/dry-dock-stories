@@ -21,7 +21,9 @@ YAZI=$(fc-list 2>/dev/null || true)
 grep -qi "DejaVu Sans" <<<"$YAZI" || { echo "HATA: DejaVu Sans yazı tipi yok"; exit 1; }
 # Harita bölümü (isteğe bağlı): yoksa harita blokları görsele düşer.
 if command -v node >/dev/null && { [ -n "${HARITA_CHROME:-}" ] || [ -x /usr/bin/google-chrome ] || [ -x /usr/bin/chromium ]; }; then
-  echo "harita: node ve Chrome var"
+  H="$(cd "$(dirname "$0")" && pwd)/harita"
+  [ -d "$H/node_modules" ] || (cd "$H" && npm ci --no-audit --no-fund --loglevel=error >/dev/null)
+  echo "harita: hazır (node, Chrome, paketler)"
 else
   echo "UYARI: harita için node ya da Chrome yok; harita blokları görsele düşer"
 fi
