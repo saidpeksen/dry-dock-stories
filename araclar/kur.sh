@@ -21,10 +21,12 @@ YAZI=$(fc-list 2>/dev/null || true)
 grep -qi "DejaVu Sans" <<<"$YAZI" || { echo "HATA: DejaVu Sans yazı tipi yok"; exit 1; }
 # Harita bölümü (isteğe bağlı): yoksa harita blokları görsele düşer.
 if command -v node >/dev/null && { [ -n "${HARITA_CHROME:-}" ] || [ -x /usr/bin/google-chrome ] || [ -x /usr/bin/chromium ]; }; then
-  H="$(cd "$(dirname "$0")" && pwd)/harita"
-  [ -d "$H/node_modules" ] || (cd "$H" && npm ci --no-audit --no-fund --loglevel=error >/dev/null)
-  echo "harita: hazır (node, Chrome, paketler)"
+  A="$(cd "$(dirname "$0")" && pwd)"
+  for P in harita sablon; do
+    [ -d "$A/$P/node_modules" ] || (cd "$A/$P" && npm ci --no-audit --no-fund --loglevel=error >/dev/null)
+  done
+  echo "harita ve şablon: hazır (node, Chrome, paketler)"
 else
-  echo "UYARI: harita için node ya da Chrome yok; harita blokları görsele düşer"
+  echo "UYARI: node ya da Chrome yok; şablon kullanılamaz (make_short.py ile devam), harita blokları görsele düşer"
 fi
 echo "kurgu ortamı hazır"
