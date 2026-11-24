@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-24T12:10:00Z",
+ "updated_at": "2026-11-24T14:45:00Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk gelir 6–12 ay sonra; bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
@@ -77,6 +77,10 @@
     },
     {
      "text": "Profil resmi, kapak görseli ve filigran (22 Kasım)",
+     "done": true
+    },
+    {
+     "text": "Remotion Shorts şablonu (YS-7): sabit stil, filigran, kelime kelime altyazı; kabul testi geçti (24 Kasım), 05'ten itibaren kullanılıyor",
      "done": true
     }
    ]
