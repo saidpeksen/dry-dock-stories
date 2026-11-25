@@ -7,7 +7,9 @@ Her blok bir görsele karşılık gelir; metin cümlelere bölünüp sırayla se
 Harita bloğu: görsel yerine {"map": {...}, "text": "..."}; harita araclar/harita ile (Remotion) çizilir,
 biçimi araclar/harita/HARITA.md'de. Blokta "image" de varsa harita üretilemediğinde görsele düşülür.
 Çıktılar: video.mp4 (tam kalite ana kopya), video-parca-NN.bin (köprü için bölünmüş ana kopya),
-onizleme.mp4 (yalnız onay için izleme kopyası, sıkıştırılmış)."""
+onizleme.mp4 (yalnız onay için izleme kopyası, sıkıştırılmış).
+İlk kare başlığı ("headline") ve köşe etiketi ("label") yalnız şablonda (araclar/sablon) çizilir; bu yedek hat
+alanları kabul eder, çizmez ve rapor.json'a uyarı yazar."""
 import hashlib, json, re, subprocess, sys, os
 import numpy as np, soundfile as sf
 from kokoro_onnx import Kokoro
@@ -16,6 +18,36 @@ MODEL = "/home/claude/tts/models/kokoro-v1.0.onnx"
 VOICES = "/home/claude/tts/models/voices-v1.0.bin"
 SR, FPS, W, H = 24000, 30, 1080, 1920
 GAP_SENT, GAP_BLOCK, LEAD, TAIL = 0.22, 0.42, 0.30, 0.60
+ETIKET = "AI reconstruction"   # "label": true iken yazılan köşe etiketi
+
+def ust_yazilar(spec):
+    """İsteğe bağlı alanları okur: "headline" (ilk kare başlığı; 2–4 kelime, büyük harfe çevrilir), "headline_y"
+    (başlığın orta yüksekliği, piksel) ve "label" (köşe etiketi; true ise ETIKET, metin verilirse o metin).
+    Döner: (başlık | None, y | None, etiket | None, uyarılar). Hata vermez; biçimi bozuk alan yok sayılır ve uyarılır."""
+    uyari = []
+    h = spec.get("headline")
+    if h is not None and not isinstance(h, str):
+        uyari.append("headline metin değil; yok sayıldı"); h = None
+    h = " ".join(h.split()).upper() if h else None
+    if h:
+        n = len(h.split())
+        if not 2 <= n <= 4:
+            uyari.append(f"headline {n} kelime (beklenen 2–4)")
+        if len(h) > 40:
+            uyari.append(f"headline {len(h)} karakter; küçük yazılır (beklenen en çok 40)")
+    y = spec.get("headline_y")
+    if y is not None and (isinstance(y, bool) or not isinstance(y, (int, float)) or y != y or abs(y) == float("inf")):
+        uyari.append("headline_y sayı değil; yok sayıldı"); y = None
+    e = spec.get("label")
+    if e is True:
+        e = ETIKET
+    elif isinstance(e, str):
+        e = " ".join(e.split())[:40] or None
+    else:
+        if e not in (None, False):
+            uyari.append("label true ya da metin değil; yok sayıldı")
+        e = None
+    return h or None, (y if h else None), e, uyari
 
 def trim(x, thr=0.01):
     idx = np.where(np.abs(x) > thr)[0]
@@ -153,6 +185,11 @@ def main(spec_path, out_dir):
              "altyazi_sayisi": len(events), "bolum_sinirlari": [round(x, 1) for x in bounds]}
     if harita_raporu:
         rapor["harita"] = harita_raporu
+    baslik, _, etiket, uyari = ust_yazilar(spec)
+    if baslik or etiket:   # yedek hat bunları çizmez; kaydı tutan bilsin
+        uyari.append("yedek hat ilk kare başlığını ve köşe etiketini çizmez (yalnız şablonda var)")
+    if uyari:
+        rapor["uyarilar"] = uyari
     # köprü: ana kopyayı kayıpsız parçalara böl (bağlayıcı çağrısı başına ~3 MB sınırı)
     if spec.get("parca_mb"):
         rapor["kopru"] = split_file(out, spec["parca_mb"], out_dir)

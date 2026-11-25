@@ -3,6 +3,9 @@
 Kullanım: python3 -I araclar/sablon/kurgu.py spec.json cikis_klasoru
 spec.json make_short.py ile aynıdır: {"voice":"am_michael","blocks":[{"image":"1.jpg","text":"..."},
   {"map":{...},"image":"2.jpg","text":"..."}, ...]}. Harita bloğu araclar/harita bileşeniyle çizilir.
+İsteğe bağlı: "headline" (ilk kare başlığı: 2–4 kelime, ilk 1,5 saniyede büyük yazı), "headline_y" (başlığın orta
+yüksekliği, piksel; varsayılan 480) ve "label" (sağ üst köşe etiketi; true ise "AI reconstruction"). Bu alanlar
+yoksa çıktı öncekiyle aynıdır.
 Çıktılar: video.mp4 (tam kalite, ses dahil), rapor.json. Hata olursa sıfırdan farklı kodla çıkar; görev o zaman
 make_short.py ile devam eder. Biçim ve kurallar: araclar/sablon/SABLON.md."""
 import json, os, re, shutil, subprocess, sys
@@ -15,6 +18,7 @@ import make_short as ms
 
 FPS = ms.FPS
 SATIR = 16            # altyazı satırı en çok karakter (74 px Montserrat ExtraBold, 860 px genişlik)
+BASLIK_SN = 1.5       # ilk kare başlığının ekranda kaldığı süre (sn)
 UNLU = set("aeiouɑɐɒæɛɪɔʊʌəɚɜɝʉɨyøœɘɵɤ")
 
 
@@ -119,6 +123,7 @@ def main(spec_path, out_dir):
     shutil.copytree(os.path.join(BURASI, "public"), pub)
     k = Kokoro(ms.MODEL, ms.VOICES)
     voice = spec.get("voice", "am_michael")
+    baslik, baslik_y, etiket, uyari = ms.ust_yazilar(spec)
 
     # ses ve kelime zamanları (make_short.py ile aynı aralıklar)
     audio, t, kelimeler, block_starts = [np.zeros(int(ms.LEAD * ms.SR), dtype=np.float32)], ms.LEAD, [], []
@@ -166,6 +171,12 @@ def main(spec_path, out_dir):
         chunks[-1]["end"] = min(frames, chunks[-1]["end"] + round(0.4 * FPS))
 
     props = {"frames": frames, "blocks": bloklar, "chunks": chunks, "audio": "ses.wav"}
+    if baslik:            # alan yoksa props'a hiçbir şey eklenmez; şablonun çıktısı değişmez
+        props["headline"] = {"text": baslik, "frames": round(BASLIK_SN * FPS)}
+        if baslik_y is not None:
+            props["headline"]["y"] = baslik_y
+    if etiket:
+        props["label"] = etiket
     pj = os.path.abspath(os.path.join(out_dir, "sablon.json")); json.dump(props, open(pj, "w"), ensure_ascii=False)
 
     if not os.path.isdir(os.path.join(BURASI, "node_modules")):
@@ -191,6 +202,12 @@ def main(spec_path, out_dir):
              "bolum_sinirlari": [round(x, 1) for x in bounds]}
     if harita:
         rapor["harita"] = harita
+    if baslik:
+        rapor["baslik"] = baslik
+    if etiket:
+        rapor["etiket"] = etiket
+    if uyari:
+        rapor["uyarilar"] = uyari
     if spec.get("parca_mb"):
         rapor["kopru"] = ms.split_file(out, spec["parca_mb"], out_dir)
     json.dump(rapor, open(os.path.join(out_dir, "rapor.json"), "w"), ensure_ascii=False, indent=1)

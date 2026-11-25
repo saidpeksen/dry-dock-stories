@@ -1,8 +1,9 @@
 // Dry Dock Stories – Shorts şablonu (Remotion).
 // Sabit stil: soğuk renk ayarı, bölümler arası kısa geçiş, sol üstte filigran, alt üçte birde kelime kelime
 // vurgulu altyazı. Görsel blokları yavaş yakınlaşır/uzaklaşır; harita blokları araclar/harita bileşeniyle çizilir.
-import React from 'react';
-import {AbsoluteFill, Audio, Img, Sequence, continueRender, cancelRender, delayRender, interpolate,
+// İsteğe bağlı (props'ta varsa): ilk kare başlığı (headline) ve sağ üst köşe etiketi (label). Yoksa hiçbir şey çizilmez.
+import React, {useEffect, useState} from 'react';
+import {AbsoluteFill, Audio, Easing, Img, Sequence, continueRender, cancelRender, delayRender, interpolate,
   staticFile, useCurrentFrame} from 'remotion';
 import {MapScene} from '../../harita/src/MapScene.jsx';
 
@@ -14,11 +15,11 @@ const YAZI = 'DDS Montserrat';
 
 // Yazı tipi (OFL, public/fonts) yüklenmeden kare alınmaz.
 const yaziBekle = delayRender('Yazı tipi yükleniyor');
-Promise.all([
+const yaziHazir = Promise.all([
   new FontFace(YAZI, `url(${staticFile('fonts/Montserrat-ExtraBold.woff2')})`, {weight: '800'}).load(),
   new FontFace(YAZI, `url(${staticFile('fonts/Montserrat-SemiBold.woff2')})`, {weight: '600'}).load(),
-]).then((fs) => { fs.forEach((f) => document.fonts.add(f)); continueRender(yaziBekle); })
-  .catch((e) => cancelRender(e));
+]).then((fs) => { fs.forEach((f) => document.fonts.add(f)); continueRender(yaziBekle); });
+yaziHazir.catch((e) => cancelRender(e));
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'};
 
@@ -58,6 +59,86 @@ const Filigran = () => (
   </div>
 );
 
+// Köşe etiketi: sağ üstte, filigranla aynı hizada küçük yazı (video boyunca).
+const Etiket = ({metin}) => (
+  <div style={{position: 'absolute', right: 56, top: 92, height: 34, display: 'flex', alignItems: 'center', opacity: 0.78,
+    fontFamily: YAZI, fontWeight: 600, fontSize: 24, letterSpacing: 1, color: '#ffffff', whiteSpace: 'nowrap',
+    textShadow: '0 2px 6px rgba(0,0,0,0.6)'}}>{metin}</div>
+);
+
+// İlk kare başlığı: videonun ilk karesinden itibaren kısa süre görünen büyük yazı (2–4 kelime).
+// Kelimeler en çok üç satıra bölünür; yazının gerçek genişliği ölçülür ve BASLIK_EN'e sığan en büyük boyut seçilir.
+// Blok, filigran ve etiket bandının altında (BASLIK_UST), altyazı bandının üstünde (BASLIK_ALT) kalır.
+const BASLIK_EN = 940, BASLIK_UST = 190, BASLIK_ALT = 1150, BASLIK_Y = 480;
+const BASLIK_BOYUT = 150, BASLIK_YETER = 120, BASLIK_SATIR = 1.06;
+
+const emGenislik = (metin) => {   // 1 em'e göre genişlik; yazı tipi yüklendikten sonra çağrılır
+  const s = document.createElement('span');
+  s.style.cssText = `position:absolute;left:-9999px;top:0;visibility:hidden;white-space:nowrap;font-family:"${YAZI}";font-weight:800;font-size:200px`;
+  s.textContent = metin;
+  document.body.appendChild(s);
+  const w = s.getBoundingClientRect().width / 200;
+  s.remove();
+  return w;
+};
+
+const bolmeler = (kelimeler, n) => {   // kelimeleri sırayı bozmadan n satıra bölmenin bütün yolları
+  if (n === 1) return [[kelimeler.join(' ')]];
+  const out = [];
+  for (let i = 1; i <= kelimeler.length - (n - 1); i++) {
+    for (const kalan of bolmeler(kelimeler.slice(i), n - 1)) out.push([kelimeler.slice(0, i).join(' '), ...kalan]);
+  }
+  return out;
+};
+
+const baslikYerlesimi = (metin) => {   // en az satırla BASLIK_YETER'e ulaşan bölme; ulaşılamıyorsa en büyük yazı
+  const kelimeler = metin.split(' ').filter(Boolean);
+  let secim = null;
+  for (let n = 1; n <= Math.min(3, kelimeler.length); n++) {
+    for (const satirlar of bolmeler(kelimeler, n)) {
+      const enler = satirlar.map(emGenislik);
+      const boyut = Math.min(BASLIK_BOYUT, BASLIK_EN / Math.max(...enler));
+      const denge = Math.min(...enler) / Math.max(...enler);
+      if (!secim || boyut > secim.boyut + 0.5 || (secim.satirlar.length === n && Math.abs(boyut - secim.boyut) <= 0.5 && denge > secim.denge)) {
+        secim = {satirlar, boyut, denge};
+      }
+    }
+    if (secim.boyut >= BASLIK_YETER) break;
+  }
+  return secim;
+};
+
+const Baslik = ({text, frames = 45, y}) => {
+  const f = useCurrentFrame();
+  const [bekle] = useState(() => delayRender('Başlık ölçülüyor'));
+  const [d, setD] = useState(null);
+  useEffect(() => {
+    let iptal = false;
+    yaziHazir.then(() => { if (!iptal) setD(baslikYerlesimi(text)); }).catch((e) => cancelRender(e));
+    return () => { iptal = true; };
+  }, [text]);
+  useEffect(() => { if (d) continueRender(bekle); }, [d, bekle]);
+  useEffect(() => () => continueRender(bekle), [bekle]);   // bileşen erken kalkarsa bekleme açık kalmasın
+  if (!d) return null;
+  const yukseklik = d.satirlar.length * d.boyut * BASLIK_SATIR;
+  const orta = Math.max(BASLIK_UST + yukseklik / 2, Math.min(BASLIK_ALT - yukseklik / 2, typeof y === 'number' ? y : BASLIK_Y));
+  const op = interpolate(f, [frames - 7, frames - 1], [1, 0], clamp);          // ilk kareden itibaren tam görünür
+  const sc = interpolate(f, [0, 6], [1.05, 1], {...clamp, easing: Easing.out(Easing.cubic)});
+  const cizgi = Math.round(d.boyut * 0.1);
+  return (
+    <div style={{position: 'absolute', left: 0, right: 0, top: orta, textAlign: 'center', opacity: op,
+      transform: `translateY(-50%) scale(${sc})`}}>
+      <div style={{position: 'absolute', left: 0, right: 0, top: -130, bottom: -130,
+        background: 'radial-gradient(ellipse 62% 50% at 50% 50%, rgba(3,8,14,0.6) 0%, rgba(3,8,14,0.38) 45%, rgba(3,8,14,0) 100%)'}} />
+      {d.satirlar.map((s, i) => (
+        <div key={i} style={{position: 'relative', fontFamily: YAZI, fontWeight: 800, fontSize: d.boyut, lineHeight: BASLIK_SATIR,
+          whiteSpace: 'nowrap', color: '#ffffff', WebkitTextStroke: `${cizgi}px #060b11`, paintOrder: 'stroke fill',
+          textShadow: '0 10px 26px rgba(0,0,0,0.6)'}}>{s}</div>
+      ))}
+    </div>
+  );
+};
+
 const kontur = ['-3px -3px', '3px -3px', '-3px 3px', '3px 3px', '0 -3px', '0 3px', '-3px 0', '3px 0']
   .map((o) => `${o} 0 #060b11`).join(', ') + ', 0 6px 14px rgba(0,0,0,0.55)';
 
@@ -87,7 +168,7 @@ const Altyazi = ({chunks}) => {
   );
 };
 
-export const Shorts = ({blocks = [], chunks = [], audio}) => (
+export const Shorts = ({blocks = [], chunks = [], audio, headline, label}) => (
   <AbsoluteFill style={{backgroundColor: '#05090e'}}>
     {blocks.map((b, i) => {
       const len = Math.max(1, b.end - b.start);
@@ -104,7 +185,13 @@ export const Shorts = ({blocks = [], chunks = [], audio}) => (
     })}
     <Katman />
     <Filigran />
+    {label ? <Etiket metin={label} /> : null}
     <Altyazi chunks={chunks} />
+    {headline && headline.text ? (
+      <Sequence from={0} durationInFrames={Math.max(1, headline.frames || 45)}>
+        <Baslik text={headline.text} frames={Math.max(1, headline.frames || 45)} y={headline.y} />
+      </Sequence>
+    ) : null}
     {audio ? <Audio src={staticFile(audio)} /> : null}
   </AbsoluteFill>
 );
