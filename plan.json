@@ -1,15 +1,15 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-25T08:17:12Z",
+ "updated_at": "2026-11-25T21:40:36Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
- "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk gelir 6–12 ay sonra; bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
+ "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk reklam geliri 12 ay ve üzeri; bir uzun video sıçrarsa daha erken. Bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
-  "summary": "Aşama 1'in ilk haftası. Dört Shorts yayında (19, 21 ve 23 Kasım). 22 Kasım kararı: 04'ten itibaren Shorts \"nasıl / neden\" soru biçiminde; 04 bu biçimin ilk videosu.",
+  "summary": "Aşama 1. Dört Shorts yayında (19, 21 ve 23 Kasım); 04'ten itibaren soru biçimi. 26 Kasım: plan gözden geçirildi. 06'dan itibaren konular sırayla gelir: bir süreç sorusu (tersane, mühendislik), bir olay sorusu.",
   "next": [
    "05 (Vasa: neden yeni savaş gemisi limanda battı?) siparişi açıldı; görseller 25 Kasım 19.00'da, video 26 Kasım sabahı hazır; onay ve yayın 26 Kasım akşamı.",
    "25 Kasım akşamı: ChatGPT 04'ün 48 saatlik rakamlarını Studio'dan okur; Claude 26 Kasım sabahı Plan'a işler.",
-   "16 Aralık: Aşama 1 değerlendirmesi, en iyi 2 konu seçilir."
+   "16 Aralık: biçim kararı. 04–13 rakamlarıyla süreç ve olay soruları kıyaslanır; kazanan tür ilk uzun videoların kalıbı olur."
   ]
  },
  "calendar": [
@@ -30,7 +30,12 @@
   },
   {
    "date": "2026-12-16",
-   "what": "Aşama 1 sonu: ay değerlendirmesi, en iyi 2 konu seçilir",
+   "what": "Biçim kararı: 04–13 rakamlarıyla en iyi soru türü seçilir; ilk iki uzun videonun konusu kesinleşir",
+   "you": "Karar"
+  },
+  {
+   "date": "2027-01-05",
+   "what": "Kanal kararı (25. video civarı): devam, biçim değişimi ya da dur",
    "you": "Karar"
   }
  ],
@@ -84,26 +89,10 @@
    "title": "Aşama 1: Öğrenme",
    "period": "19 Kasım – 16 Aralık 2026",
    "current": true,
-   "note": "Haftada 3 Shorts, toplam 12. Amaç: akışı oturtmak ve hangi konu ve açılışın tuttuğunu görmek.",
+   "note": "Gün aşırı bir Shorts; 16 Aralık'a kadar yaklaşık 15 video. Konular sırayla: bir süreç sorusu (tersane, refit, mühendislik), bir olay sorusu. Amaç: akışı oturtmak ve hangi soru türünün tuttuğunu görmek. Video başına rakamlar Video tablosunda, konu sırası alttaki listede.",
    "items": [
     {
-     "text": "Shorts 01: Tricolor (yayınlandı, 19 Kasım)",
-     "done": true
-    },
-    {
-     "text": "Shorts 01 sonuçlarını kaydet",
-     "done": true
-    },
-    {
-     "text": "Shorts 02: Golden Ray (yayınlandı, 21 Kasım)",
-     "done": true
-    },
-    {
-     "text": "Shorts 03: Ever Given (yayınlandı, 21 Kasım)",
-     "done": true
-    },
-    {
-     "text": "Shorts 02 ve 03 sonuçlarını kaydet (23 Kasım, ChatGPT Studio'dan okur)",
+     "text": "Shorts 01–03 eski olay anlatımı biçimiyle yayınlandı (19 ve 21 Kasım); 48 saat rakamları kaydedildi",
      "done": true
     },
     {
@@ -111,35 +100,86 @@
      "done": true
     },
     {
-     "text": "Shorts 04: How Did a Cook Survive Inside a Sunken Tugboat? (yayınlandı, 23 Kasım)",
+     "text": "Shorts 04: soru biçimindeki ilk video (yayınlandı, 23 Kasım)",
      "done": true
     },
     {
-     "text": "Kanal açıklaması soru biçimine göre (Said onayladı 24 Kasım; ChatGPT Studio'da değiştirir)",
+     "text": "Kanal açıklaması soru biçimine göre (Said onayladı 24 Kasım; köprüde 24 Kasım tarihli tamamlandı kaydı var)",
+     "done": true
+    },
+    {
+     "text": "Plan incelemesi: yeni ölçüt, konu sırası, uzun video kuralı (Said onayladı, 26 Kasım)",
+     "done": true
+    },
+    {
+     "text": "04–13 soru biçimiyle; süreç ve olay soruları birbiriyle ve 01–03 ile kıyaslanır",
      "done": false
     },
     {
-     "text": "Shorts 04 sonuçlarını kaydet (25 Kasım, ChatGPT Studio'dan okur)",
+     "text": "Shorts şablonuna ilk kare başlığı (2–4 kelime) ve 'AI reconstruction' etiketi; ayrı kurulum işi",
      "done": false
     },
     {
-     "text": "04–08 soru biçimiyle; sonuçları 01–03 ile karşılaştır",
+     "text": "Uzun video hattı denemesi (16 Aralık'tan önce): yayınlanmayan tek 8–10 dk video; dosya aktarımı, yatay şablon, kurgu süresi, görsel sayısı",
      "done": false
     },
     {
-     "text": "2. hafta: 3 yeni konu, sonuçlara göre seçilir",
+     "text": "16 Aralık biçim kararı: kazanan soru türü ilk uzun videoların kalıbı olur",
+     "done": false
+    }
+   ]
+  },
+  {
+   "title": "Konu sırası: Shorts 06–15",
+   "period": "28 Kasım – 16 Aralık 2026",
+   "note": "Gün aşırı sırayla. Süreç: bir iş nasıl ya da neden öyle yapılır. Olay: gerçek bir olaydan çıkan soru. Olgular siparişte iki kaynaktan doğrulanır; doğrulanamayan konu atlanır, yerine yedekten aynı türde konu gelir.",
+   "items": [
+    {
+     "text": "06 · süreç · How Does a Giant Ship Balance on a Row of Blocks? · kuru havuza alma, omurga takozları",
      "done": false
     },
     {
-     "text": "3. hafta: 3 Shorts",
+     "text": "07 · olay · How Did a Cargo Ship Crash Into a Waterfront Mansion? · Vitaspirit, İstanbul Boğazı 2018 · harita",
      "done": false
     },
     {
-     "text": "4. hafta: 3 Shorts",
+     "text": "08 · süreç · Why Would a Shipyard Cut a Cruise Ship in Half? · gemi uzatma, araya yeni blok",
      "done": false
     },
     {
-     "text": "Ay sonu değerlendirmesi: en iyi 2 konu uzun videoya taşınır",
+     "text": "09 · olay · How Did One Warship Get Built From Two Wrecks? · HMS Zubian 1917",
+     "done": false
+    },
+    {
+     "text": "10 · süreç · Why Are Some Ships Launched Sideways? · yandan denize indirme",
+     "done": false
+    },
+    {
+     "text": "11 · olay · Why Did a Five-Year-Old Container Ship Snap in Half? · MOL Comfort 2013 · harita",
+     "done": false
+    },
+    {
+     "text": "12 · süreç · How Do You Change the Engine of an Ocean Liner? · QE2 makine değişimi 1986–87",
+     "done": false
+    },
+    {
+     "text": "13 · olay · Why Did a Luxury Liner Capsize at Her Own Pier? · Normandie, New York 1942",
+     "done": false
+    },
+    {
+     "text": "14 · süreç · How Does One Ship Carry Another Ship on Its Back? · yarı batar ağır yük gemisi",
+     "done": false
+    },
+    {
+     "text": "15 · olay · Why Did the World's Biggest Ship Get Stuck at Launch? · Great Eastern 1857–58",
+     "done": false
+    },
+    {
+     "text": "Yedek süreç: How Does a Small Anchor Hold a Giant Ship? · Why Do Empty Ships Carry Seawater? · Why Are Ships Built in Giant Blocks?",
+     "done": false
+    },
+    {
+     "text": "Yedek olay: Why Was a Giant Cruise Ship Scrapped Before She Ever Sailed? (Global Dream II) · Why Did a City Almost Dismantle a Bridge for One Yacht? (Rotterdam 2022)",
      "done": false
     }
    ]
@@ -147,28 +187,39 @@
   {
    "title": "Aşama 2: İlk uzun videolar",
    "period": "Aralık 2026 – Ocak 2027",
-   "note": "İki haftada bir 5–8 dakikalık video; Shorts haftada 2–3 devam eder. Shorts sonunda uzun videoya yönlendirme yapılır. Kalıp (24 Kasım): yapay zekâ görselleri tek ve tutarlı bir tarzda, anlatıcı ses, bölümlere ayrılmış yapı, soru başlığı.",
+   "note": "İki haftada bir uzun video: ilk ikisi 8–10 dakika, sonrası 12–20 dakika. Shorts gün aşırı sürer ve uzun videoya yönlendirir. Kalıp: tek soruyu bölümlerle cevaplayan mekanizma anlatımı; az anlatılmış, teknik kancalı konu; her videoda 'tersaneden bakınca' bölümü (Said'in 3–5 cümlelik notu); yapay ses. Ünlü olay uzun videoya taşınmaz.",
    "items": [
     {
-     "text": "Uzun video 1: en çok tutan Shorts konusunun geniş hâli"
+     "text": "Uzun video kalıbı: soğuk açılış, yol haritası, 3–4 bölüm, 'tersaneden bakınca', cevap; yatay şablon, bölüm işaretleri, kaynaklar açıklamada",
+     "done": false
     },
     {
-     "text": "Uzun video 2"
+     "text": "Uzun video 1 (8–10 dk), 16 Aralık'ta kazanan türe göre. Süreç: bir yolcu gemisi nasıl uzatılır. Olay: 200 metrelik batık nasıl sekiz parçaya kesildi (Golden Ray)",
+     "done": false
     },
     {
-     "text": "Uzun video 3"
+     "text": "Uzun video 2 (8–10 dk). Süreç: dev bir gemi kuru havuzda neler yaşar. Olay: lüks transatlantik kendi rıhtımında neden devrildi (Normandie)",
+     "done": false
     },
     {
-     "text": "Uzun video 4"
+     "text": "Uzun video 3 (12–15 dk): İstanbul Boğazı dev gemiler için neden bu kadar zor (harita ağırlıklı)",
+     "done": false
     },
     {
-     "text": "Kapak görseli (thumbnail) şablonu"
+     "text": "Uzun video 4 (12–15 dk): bir yolcu gemisinin içi birkaç haftada nasıl yenilenir (refit)",
+     "done": false
     },
     {
-     "text": "Uzun video kalıbını kur: tutarlı görsel tarzı, anlatıcı ses, bölümler (örnek: Golden Ray kurtarması 6–8 dk)"
+     "text": "Her uzun videodan önce rakip taraması: aynı soruyu son 12 ayda çok izlenen bir video anlattıysa açı değiştirilir",
+     "done": false
     },
     {
-     "text": "Otomatik dublajı aç (Aşama 4'ten erkene alındı): uzun videolar Türkçe, İspanyolca, Portekizce izleyiciye de ulaşsın"
+     "text": "Kapak görseli (thumbnail) şablonu: 2–3 kelime ya da tek sayı, tek odak",
+     "done": false
+    },
+    {
+     "text": "Otomatik dublajı aç: İspanyolca, Portekizce, Almanca (Türkçe dublaj hedef dili değil)",
+     "done": false
     },
     {
      "text": "Harita animasyonu (Remotion, ücretsiz): Said onayladı (24 Kasım); yer ya da rota anlatan videolarda blok 2 harita",
@@ -179,16 +230,27 @@
   {
    "title": "Aşama 3: Büyüme",
    "period": "Şubat 2027'den itibaren",
-   "note": "Haftada bir 10–15 dakikalık video. Gelir başlayınca ses kalitesi ve uzman kontrolü artırılır.",
+   "note": "Haftada bir 12–20 dakikalık video. Başvurudan önce özgünlük kapısı: her videoda uzman yorumu ve videolar arası yapı farkı. Gelir başlayınca ses kalitesi ve uzman kontrolü artırılır.",
    "items": [
     {
-     "text": "Haftalık uzun video düzenine geç"
+     "text": "Haftalık uzun video düzenine geç",
+     "done": false
     },
     {
-     "text": "500 abone + 3.000 saat: erken seviye başvurusu"
+     "text": "Seri havuzu: gemi indirme kazaları, blok inşa, makine değişimi, gemi taşıyan gemi, tersane yangınları, ikiye bölünen konteyner gemileri",
+     "done": false
     },
     {
-     "text": "1.000 abone + 8.000 saat: tam YPP başvurusu"
+     "text": "500 abone + 3.000 saat: erken seviye başvurusu (yalnız hayran geliri)",
+     "done": false
+    },
+    {
+     "text": "Başvuru öncesi özgünlük denetimi (YouTube'un şablon ve seri üretim kuralı, Temmuz 2026)",
+     "done": false
+    },
+    {
+     "text": "1.000 abone + 8.000 saat: tam YPP başvurusu",
+     "done": false
     }
    ]
   },
@@ -258,28 +320,31 @@
   {
    "name": "Erken seviye",
    "need": "500 abone + 3.000 saat uzun video izlenmesi ya da 90 günde 3 milyon Shorts izlenmesi",
-   "unlocks": "Kanal üyeliği, Süper Teşekkürler gibi hayran gelirleri"
+   "unlocks": "Kanal üyeliği, Süper Teşekkürler gibi hayran gelirleri; reklam geliri yok"
   },
   {
-   "name": "Tam YPP (1 Şubat 2027'ye kadar)",
-   "need": "1.000 abone + 4.000 saat ya da 90 günde 10 milyon Shorts izlenmesi",
-   "unlocks": "Reklam geliri"
+   "name": "Tam YPP (1 Şubat 2027'den itibaren)",
+   "need": "1.000 abone + 8.000 saat uzun video izlenmesi ya da 90 günde 20 milyon Shorts izlenmesi",
+   "unlocks": "Uzun videolarda reklam geliri"
   },
   {
-   "name": "Tam YPP (1 Şubat 2027'den sonra)",
-   "need": "8.000 saat ya da 90 günde 20 milyon Shorts izlenmesi",
-   "unlocks": "Reklam geliri"
+   "name": "Shorts reklam payı (1 Şubat 2027'den itibaren)",
+   "need": "Programdaki kanal için de 90 günde 10 milyon Shorts izlenmesi",
+   "unlocks": "Shorts reklam geliri; altında yalnız uzun videolar kazandırır"
   }
  ],
  "open": [
-  "16 Aralık ölçütü (onaylandı, Said): 04–08 ortalaması 48 saatte en az 50 görüntüleme VE ortalama izlenme en az %45 → devam, uzun videoya geç.",
-  "Biri tutar biri tutmazsa → biçim düzeltilip Aşama 1 iki hafta uzar. Ortalama 30 görüntülemenin ve %35 izlenmenin altı → dur, konu/biçim yeniden değerlendirilir.",
-  "Karşılaştırma tabanı 01–03: ortalama 36 görüntüleme, izlemeyi seçen %59,5, ortalama izlenme %45. Herhangi bir video 48 saatte 200+ görüntülerse ayrıca 'devam' sayılır.",
-  "Shorts izlenme süresi saat eşiğine sayılmaz; gelir için uzun videolar şart",
-  "Kitap–film biçimi: yalnız telif süresi dolmuş deniz romanlarıyla (Moby-Dick, Denizler Altında Yirmi Bin Fersah); 05–08 sonuçlarından sonra tek deneme olarak değerlendirilecek",
-  "Sabır kuralı: tek kanalda 20–30 video görülmeden konu ya da kanal hakkında kesin karar yok.",
-  "İleride: tutan format kanıtlanınca Almanca ve İspanyolca izleyiciye (önce otomatik dublaj). Özgün ses ve görsel dil öncelik.",
-  "16 Aralık sonrası 2 videoluk deneme: 'kaçını biliyorsun' biçimi (ör. 'Only sailors know these 5 ship horn signals'; boş liste dolar, telifsiz). Soru biçimiyle kıyaslanır.",
-  "16 Aralık sonrası tek video denemesi: 3 saatlik deniz ortam videosu (ör. fırtınada gemi kamarası; Remotion döngü, telifsiz kendi sesimiz). Amaç uzun video izlenme saati; seri üretim yok."
+  "16 Aralık biçim kararı (Said onayladı, 26 Kasım): veri 04–13. Süreç ve olay soruları ayrı kıyaslanır; kazanan tür ilk uzun videoların kalıbı olur. Bu tarihte 'dur' kararı verilmez.",
+  "Güçlü işaret: 04–13 medyanı 48 saatte en az 50 görüntüleme, ortalama izlenme en az %45, izlemeyi seçenler en az %55. Eşikler küçük örnekten; 04–08 gelince gözden geçirilir.",
+  "Kanal kararı 25. videoda (yaklaşık 5 Ocak 2027): devam, biçim değişimi ya da dur. Sabır kuralı: 20–30 video görülmeden konu ya da kanal hakkında kesin karar yok.",
+  "Karşılaştırma tabanı 01–03: ortalama 36 görüntüleme, izlemeyi seçen %59,5, ortalama izlenme %45. Bir video 48 saatte 200+ görüntülerse o soru türü öne alınır.",
+  "Shorts izlenme süresi saat eşiğine sayılmaz; 1 Şubat 2027'den sonra Shorts reklam payı da 90 günde 10 milyon izlenme ister. Gelir için uzun videolar şart.",
+  "Özgünlük kapısı: YouTube şablon gibi görünen, az yorumlu, seri üretim izlenimi veren içeriği para kazanma dışında tutuyor. Karşılığı: uzman yorumu ve videolar arası yapı farkı.",
+  "Anlatım kararı (Said, 26 Kasım): uzun videolarda yapay ses; her video için Said 3–5 cümlelik 'tersaneden bakınca' notu verir.",
+  "Tek değişken kuralı: 13'e kadar yalnız soru türü değişir; şablon değişikliği (ilk kare başlığı) bütün videolara aynı anda gelir ve Video tablosuna not edilir.",
+  "Deneme sırası: aynı anda en çok bir deneme. 16 Aralık sonrası 2 video: 'kaçını biliyorsun' biçimi (ör. 'Only sailors know these 5 ship horn signals').",
+  "Kitap–film biçimi (telif süresi dolmuş deniz romanları): konu dışı olduğu için bekliyor; kanal kararından önce ele alınmaz.",
+  "İleride: tutan format kanıtlanınca İspanyolca, Portekizce ve Almanca izleyiciye (önce otomatik dublaj).",
+  "3 saatlik deniz ortam videosu denemesi plandan çıkarıldı (Said, 26 Kasım)."
  ]
 }
