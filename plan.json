@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-25T21:40:36Z",
+ "updated_at": "2026-11-25T22:15:46Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk reklam geliri 12 ay ve üzeri; bir uzun video sıçrarsa daha erken. Bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
@@ -116,7 +116,7 @@
      "done": false
     },
     {
-     "text": "Shorts şablonuna ilk kare başlığı (2–4 kelime) ve 'AI reconstruction' etiketi; ayrı kurulum işi",
+     "text": "Shorts şablonuna ilk kare başlığı (2–4 kelime) ve 'AI reconstruction' etiketi: şablon hazır, kabul testi geçti (26 Kasım); deneme videosu Said'in onayını bekliyor",
      "done": false
     },
     {
@@ -342,6 +342,7 @@
   "Özgünlük kapısı: YouTube şablon gibi görünen, az yorumlu, seri üretim izlenimi veren içeriği para kazanma dışında tutuyor. Karşılığı: uzman yorumu ve videolar arası yapı farkı.",
   "Anlatım kararı (Said, 26 Kasım): uzun videolarda yapay ses; her video için Said 3–5 cümlelik 'tersaneden bakınca' notu verir.",
   "Tek değişken kuralı: 13'e kadar yalnız soru türü değişir; şablon değişikliği (ilk kare başlığı) bütün videolara aynı anda gelir ve Video tablosuna not edilir.",
+  "İlk kare başlığı ve 'AI reconstruction' etiketi şablonda hazır (26 Kasım); alan verilmedikçe çıktı aynı. Said deneme videosunu onaylayınca 06'dan itibaren bütün videolara birlikte gelir.",
   "Deneme sırası: aynı anda en çok bir deneme. 16 Aralık sonrası 2 video: 'kaçını biliyorsun' biçimi (ör. 'Only sailors know these 5 ship horn signals').",
   "Kitap–film biçimi (telif süresi dolmuş deniz romanları): konu dışı olduğu için bekliyor; kanal kararından önce ele alınmaz.",
   "İleride: tutan format kanıtlanınca İspanyolca, Portekizce ve Almanca izleyiciye (önce otomatik dublaj).",

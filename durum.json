@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-11-25T21:53:00Z",
+ "updated_at": "2026-11-25T22:15:46Z",
  "channel": "Dry Dock Stories",
  "runs": {
   "claude": "2026-11-25T13:20:00Z",
@@ -86,6 +86,14 @@
   {
    "id": "sablon-baslik-kurulum",
    "title": "09.30 · Claude'da bu projede yeni sohbet aç, yaz: kurulum-isleri notunu oku, 1. işi kur (Shorts ilk kare başlığı)",
+   "due": "2026-11-26",
+   "window": "09.30",
+   "done": true,
+   "done_at": "2026-11-25T22:15:46Z"
+  },
+  {
+   "id": "sablon-baslik-onay",
+   "title": "09.30 · Claude'daki '1. işi kur' sohbetini aç, başlıklı deneme videosunu izle; uygunsa 'başlık onay' yaz",
    "due": "2026-11-26",
    "window": "09.30",
    "done": false
