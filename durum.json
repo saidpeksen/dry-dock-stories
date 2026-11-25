@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-11-25T22:15:46Z",
+ "updated_at": "2026-11-25T22:27:11Z",
  "channel": "Dry Dock Stories",
  "runs": {
   "claude": "2026-11-25T13:20:00Z",
@@ -96,7 +96,8 @@
    "title": "09.30 · Claude'daki '1. işi kur' sohbetini aç, başlıklı deneme videosunu izle; uygunsa 'başlık onay' yaz",
    "due": "2026-11-26",
    "window": "09.30",
-   "done": false
+   "done": true,
+   "done_at": "2026-11-25T22:27:11Z"
   },
   {
    "id": "uzun-video-hatti-denemesi",
