@@ -1,14 +1,14 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-24T21:50:32Z",
+ "updated_at": "2026-11-25T06:15:50Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk gelir 6–12 ay sonra; bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
   "summary": "Aşama 1'in ilk haftası. Dört Shorts yayında (19, 21 ve 23 Kasım). 22 Kasım kararı: 04'ten itibaren Shorts \"nasıl / neden\" soru biçiminde; 04 bu biçimin ilk videosu.",
   "next": [
-   "05'in siparişi 25 Kasım sabahı açılır; görseller 25 Kasım 19.00'da, video 26 Kasım sabahı hazır; onayın ve yayın 26 Kasım akşamı.",
-   "25 Kasım akşamı: ChatGPT 04'ün 48 saatlik rakamlarını Studio'dan okur; Claude Plan'a işler (soru biçiminin ilk verisi).",
+   "05 (Vasa: neden yeni savaş gemisi limanda battı?) siparişi açıldı; görseller 25 Kasım 19.00'da, video 26 Kasım sabahı hazır; onay ve yayın 26 Kasım akşamı.",
+   "25 Kasım akşamı: ChatGPT 04'ün 48 saatlik rakamlarını Studio'dan okur; Claude 26 Kasım sabahı Plan'a işler.",
    "16 Aralık: Aşama 1 değerlendirmesi, en iyi 2 konu seçilir."
   ]
  },
@@ -20,7 +20,7 @@
   },
   {
    "date": "2026-11-25",
-   "what": "05'in siparişi açılır; ChatGPT görselleri 19.00'da üretir",
+   "what": "05'in siparişi açıldı (Vasa); ChatGPT görselleri 19.00'da üretir",
    "you": null
   },
   {
