@@ -1,10 +1,10 @@
 {
  "schema": 1,
- "updated_at": "2026-11-25T22:27:11Z",
+ "updated_at": "2026-11-26T06:20:11Z",
  "channel": "Dry Dock Stories",
  "runs": {
-  "claude": "2026-11-25T13:20:00Z",
-  "chatgpt": "2026-11-23T16:21:00Z"
+  "claude": "2026-11-26T06:20:11Z",
+  "chatgpt": "2026-11-25T17:45:30Z"
  },
  "videos": [
   {
@@ -73,32 +73,19 @@
    "topic": "Vasa: yeni savaş gemisi neden limanda battı (1628)",
    "title": "Why Did a Brand-New Warship Sink in Its Own Harbour?",
    "hook": "Sixty-four bronze cannons on a brand-new warship. She sank before she left the harbour.",
-   "stage": "siparis",
-   "video": false,
+   "stage": "onay",
+   "video": true,
    "youtube_url": null,
    "ordered_at": "2026-11-25T06:15:29Z",
-   "ready_at": null,
+   "ready_at": "2026-11-26T06:20:11Z",
    "approved_at": null,
-   "published_at": null
+   "published_at": null,
+   "seconds": 37.1,
+   "bytes": 36134077,
+   "sha256": "3ff489ac3ec4f61a9af126af51252ed024938ab2bc9d3082fd6353ea2c1222dc"
   }
  ],
  "tasks": [
-  {
-   "id": "sablon-baslik-kurulum",
-   "title": "09.30 · Claude'da bu projede yeni sohbet aç, yaz: kurulum-isleri notunu oku, 1. işi kur (Shorts ilk kare başlığı)",
-   "due": "2026-11-26",
-   "window": "09.30",
-   "done": true,
-   "done_at": "2026-11-25T22:15:46Z"
-  },
-  {
-   "id": "sablon-baslik-onay",
-   "title": "09.30 · Claude'daki '1. işi kur' sohbetini aç, başlıklı deneme videosunu izle; uygunsa 'başlık onay' yaz",
-   "due": "2026-11-26",
-   "window": "09.30",
-   "done": true,
-   "done_at": "2026-11-25T22:27:11Z"
-  },
   {
    "id": "uzun-video-hatti-denemesi",
    "title": "09.30 · Claude'da bu projede yeni sohbet aç, yaz: kurulum-isleri notunu oku, 2. işi kur (uzun video hattı denemesi)",

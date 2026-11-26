@@ -1,28 +1,18 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-25T22:27:11Z",
+ "updated_at": "2026-11-26T06:20:11Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk reklam geliri 12 ay ve üzeri; bir uzun video sıçrarsa daha erken. Bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
   "summary": "Aşama 1. Dört Shorts yayında (19, 21 ve 23 Kasım); 04'ten itibaren soru biçimi. 26 Kasım: plan gözden geçirildi. 06'dan itibaren konular sırayla gelir: bir süreç sorusu (tersane, mühendislik), bir olay sorusu.",
   "next": [
-   "05 (Vasa: neden yeni savaş gemisi limanda battı?) siparişi açıldı; görseller 25 Kasım 19.00'da, video 26 Kasım sabahı hazır; onay ve yayın 26 Kasım akşamı.",
-   "25 Kasım akşamı: ChatGPT 04'ün 48 saatlik rakamlarını Studio'dan okur; Claude 26 Kasım sabahı Plan'a işler.",
+   "05 (Vasa: yeni savaş gemisi neden limanda battı?) videosu hazır, onay bekliyor; 19.00'a kadar onaylanırsa bu akşam yayınlanır.",
+   "27 Kasım sabahı: 06 siparişi (süreç: dev gemi takozlar üstünde nasıl durur?); ilk kare başlığı ve etiketle ilk video.",
    "16 Aralık: biçim kararı. 04–13 rakamlarıyla süreç ve olay soruları kıyaslanır; kazanan tür ilk uzun videoların kalıbı olur."
   ]
  },
  "calendar": [
-  {
-   "date": "2026-11-25",
-   "what": "05'in siparişi açıldı (Vasa); ChatGPT görselleri 19.00'da üretir",
-   "you": null
-  },
-  {
-   "date": "2026-11-25",
-   "what": "Shorts 04'ün 48 saatlik sonuçları (ChatGPT okur, Claude işler)",
-   "you": null
-  },
   {
    "date": "2026-11-26",
    "what": "05'in videosu 09.10'da hazırlanır, onay kartı 18.30'a kadar sayfada; yayın 19.00",
@@ -313,7 +303,12 @@
    "opening": "Tek bir an (karanlıkta kıpırdayan el); soru biçimi",
    "published": "2026-11-23",
    "youtube_url": "https://youtube.com/shorts/UIsvcQP7dhI",
-   "note": "Hayatta kalma sorusu. Soru biçimindeki ilk video."
+   "note": "Tür: olay. Hayatta kalma sorusu. Soru biçimindeki ilk video. 48 saat rakamları ChatGPT'nin Studio'dan okuduğu değer (49,4 saatte).",
+   "views_48h": 43,
+   "viewed_pct": 25.5,
+   "avg_view_pct": 43,
+   "likes": 1,
+   "subscribers": 0
   }
  ],
  "thresholds": [
