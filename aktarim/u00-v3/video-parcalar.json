@@ -1,0 +1,26 @@
+{
+ "toplam_bayt": 361351110,
+ "sha256": "9e2db1eedd869f5249feb4c246e52c54c8880d4ddbf38209862438d54f971148",
+ "parcalar": [
+  {
+   "ad": "video-parca-01.bin",
+   "bayt": 95000000,
+   "sha256": "22fa7d3650e913285fbc445304eaaea59d3cb2f2de3ba40950c2a0fd9443c1fc"
+  },
+  {
+   "ad": "video-parca-02.bin",
+   "bayt": 95000000,
+   "sha256": "e0328953c6709350b0f1764c0c97a4f6bcae7c48b5760ee07ffc6087114f4596"
+  },
+  {
+   "ad": "video-parca-03.bin",
+   "bayt": 95000000,
+   "sha256": "78157176e7e7b79566e1fb4b92afaf3cef1e5c885b51186fae3b9cd2b419ba03"
+  },
+  {
+   "ad": "video-parca-04.bin",
+   "bayt": 76351110,
+   "sha256": "b129d70c9971d68aa7568efe221bc7ae21133d60da367e40f4dee8dc6615985d"
+  }
+ ]
+}
