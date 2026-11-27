@@ -1,9 +1,9 @@
 {
  "schema": 1,
- "updated_at": "2026-11-27T00:22:21Z",
+ "updated_at": "2026-11-27T06:10:11Z",
  "channel": "Dry Dock Stories",
  "runs": {
-  "claude": "2026-11-27T00:22:21Z",
+  "claude": "2026-11-27T06:10:11Z",
   "chatgpt": "2026-11-25T17:45:30Z"
  },
  "videos": [
@@ -98,6 +98,14 @@
    "id": "uzun-deneme-onay",
    "title": "09.30 · Claude'da uzun video sohbetini aç, karelere ve örnek klibe bak; uygunsa \"deneme onay\" yaz (ChatGPT denemeleri başlar)",
    "due": "2026-11-28",
+   "window": "09.30",
+   "done": true,
+   "done_at": "2026-11-27T06:06:00Z"
+  },
+  {
+   "id": "uzun-gorsel-devam",
+   "title": "09.30 · Claude'da uzun video sohbetine \"devam\" yaz: 45 görsel tamamsa deneme videosu kurulur, değilse kaçının geldiği söylenir",
+   "due": "2026-11-29",
    "window": "09.30",
    "done": false
   }
