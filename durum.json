@@ -1,9 +1,9 @@
 {
  "schema": 1,
- "updated_at": "2026-11-27T08:30:43Z",
+ "updated_at": "2026-11-27T08:37:46Z",
  "channel": "Dry Dock Stories",
  "runs": {
-  "claude": "2026-11-27T08:30:43Z",
+  "claude": "2026-11-27T08:37:46Z",
   "chatgpt": "2026-11-25T17:45:30Z"
  },
  "videos": [
@@ -113,7 +113,8 @@
    "title": "19.00 · Uzun video denemesini Claude sohbetinde izle; görünüş kararını oraya yaz (uygun / şunu değiştir)",
    "due": "2026-11-27",
    "window": "19.00",
-   "done": false
+   "done": true,
+   "done_at": "2026-11-27T08:37:46Z"
   }
  ]
 }
