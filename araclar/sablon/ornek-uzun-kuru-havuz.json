@@ -1,0 +1,249 @@
+{
+ "voice": "am_michael",
+ "label": true,
+ "title": "What Really Happens to a Giant Ship in Dry Dock?",
+ "series": {
+  "name": "IN THE DRY DOCK",
+  "tag": "A DRY DOCK STORIES SERIES"
+ },
+ "onizleme": true,
+ "sections": [
+  {
+   "kind": "cold",
+   "chapter": "The question",
+   "blocks": [
+    {
+     "image": "01.jpg",
+     "text": "A cargo ship as long as three football fields floats slowly into a concrete basin. A steel gate closes behind her. Then the water starts to go down."
+    },
+    {
+     "image": "02.jpg",
+     "text": "In a few hours, every tonne of that ship will be resting on a single line of blocks. And on the way down, there is a short window when she is neither floating nor standing."
+    },
+    {
+     "image": "03.jpg",
+     "text": "Get that window wrong, and a ship can fall over inside the dock. So what really happens to a giant ship in dry dock?"
+    }
+   ]
+  },
+  {
+   "kind": "roadmap",
+   "card": "series",
+   "blocks": [
+    {
+     "image": "04.jpg",
+     "text": "To answer that, we will follow one docking from start to finish. First, why a ship has to leave the water at all. Then, how the dock is prepared before she arrives."
+    },
+    {
+     "image": "05.jpg",
+     "text": "Then the landing itself, which is the dangerous part. And finally, what actually gets done once the hull is dry."
+    }
+   ]
+  },
+  {
+   "title": "Why a ship has to leave the water",
+   "blocks": [
+    {
+     "image": "06.jpg",
+     "text": "A large part of every ship is hidden below the waterline. It is the part that pushes through the sea, and the part that nobody on board can see."
+    },
+    {
+     "image": "07.jpg",
+     "text": "Down there, the sea goes to work. Paint wears thin. Steel corrodes. And living things move in. Slime comes first, then weed, then barnacles."
+    },
+    {
+     "image": "08.jpg",
+     "stat": {
+      "value": "20–25%",
+      "label": "MORE EMISSIONS FROM A THIN LAYER OF SLIME"
+     },
+     "text": "It does not take much. According to a study for the International Maritime Organization, a layer of slime just half a millimetre thick, covering up to half of the hull, can raise a ship's greenhouse gas emissions by twenty to twenty-five percent."
+    },
+    {
+     "image": "09.jpg",
+     "text": "More drag means more fuel, on every mile, for years. So a clean, smooth hull is not about looks. It is about money."
+    },
+    {
+     "image": "10.jpg",
+     "stat": {
+      "value": "2 IN 5 YEARS",
+      "label": "BOTTOM INSPECTIONS REQUIRED"
+     },
+     "text": "There is also the law. Under the international safety convention known as SOLAS, the outside of a cargo ship's bottom has to be inspected at least twice in every five years, and never more than thirty-six months apart."
+    },
+    {
+     "image": "11.jpg",
+     "text": "Divers can do some of that work. But sooner or later, the ship has to come out of the water completely. And you cannot simply lift a ship that size."
+    }
+   ]
+  },
+  {
+   "title": "A bed built for one ship",
+   "blocks": [
+    {
+     "image": "12.jpg",
+     "text": "So instead of lifting the ship, the yard takes away the sea. A graving dock is a long concrete basin, open to the harbour at one end, and closed by a gate."
+    },
+    {
+     "image": "13.jpg",
+     "text": "Flood the basin. Open the gate. Float the ship in. Close the gate. Pump the water out. The idea is centuries old. The difficulty is in the details."
+    },
+    {
+     "image": "14.jpg",
+     "text": "Because a ship is not built to stand on the ground. Afloat, the water presses evenly on every square metre of the hull. On land, all of that weight has to pass through a few narrow lines of support."
+    },
+    {
+     "image": "15.jpg",
+     "text": "Those supports are the keel blocks. Each one is a stack, usually concrete or steel at the bottom, with a cap of timber on top. The timber is softer than the hull, so it gives a little, and spreads the load."
+    },
+    {
+     "image": "16.jpg",
+     "text": "The blocks are tall enough for people to walk and work underneath the ship. A long ship needs a long line of them down the middle, with more rows out to the sides."
+    },
+    {
+     "image": "17.jpg",
+     "text": "And they cannot go just anywhere. Every ship has a docking plan. It is a drawing that shows where her bottom is strong enough to carry her, and where it is not."
+    },
+    {
+     "image": "18.jpg",
+     "text": "The plan also marks everything that must stay clear. Sea water intakes. Drain plugs. The sensors for the echo sounder. A block in the wrong place can cover one of them, or crush it."
+    },
+    {
+     "image": "19.jpg",
+     "text": "So before the ship arrives, the dock is pumped dry, and the yard builds her bed. Block by block, measured from the plan, and then checked again."
+    },
+    {
+     "image": "20.jpg",
+     "text": "Then the dock is flooded, and the bed disappears under the water. From this point, nobody can see the blocks."
+    },
+    {
+     "image": "21.jpg",
+     "text": "The ship is brought in above them and held exactly on the centre line, with mooring lines to the dock walls and survey instruments on the shore. A ship that lands off the line lands on the wrong part of her bottom."
+    }
+   ]
+  },
+  {
+   "title": "The critical period",
+   "blocks": [
+    {
+     "image": "22.jpg",
+     "text": "Now the pumps start. The water level drops, and the ship comes down with it, a few centimetres at a time."
+    },
+    {
+     "image": "23.jpg",
+     "text": "She does not come down level. Ships are docked with the stern slightly deeper than the bow, on purpose. So the stern touches the blocks first."
+    },
+    {
+     "image": "24.jpg",
+     "text": "That first touch changes everything. Until now, the water carried the whole ship. Now a part of her weight is carried by a block, at the very bottom of the hull."
+    },
+    {
+     "image": "25.jpg",
+     "text": "To the ship, that is the same as taking weight away from her keel. And when you take weight from the bottom of something, its centre of gravity moves up."
+    },
+    {
+     "image": "26.jpg",
+     "text": "The more water is pumped out, the harder the blocks push, and the higher that centre of gravity climbs. The ship is slowly losing the thing that keeps her upright."
+    },
+    {
+     "image": "27.jpg",
+     "text": "Naval architects call this the critical period. It runs from the moment the stern lands, until the whole keel is down on the blocks."
+    },
+    {
+     "image": "28.jpg",
+     "text": "If the ship runs out of stability before she is fully down, she can heel over to one side, or slip off the blocks altogether."
+    },
+    {
+     "image": "29.jpg",
+     "text": "That is why the numbers are worked out long before docking day. How much trim. How much force on the blocks. How much stability is left at the worst moment. If the margin is not clearly positive, the plan is changed before the ship ever enters."
+    },
+    {
+     "image": "30.jpg",
+     "text": "And it is why the pumping slows right down as the stern comes close. The dock master wants her to settle, not to drop. Only when she is sitting along her whole length do the pumps go back to full speed."
+    }
+   ]
+  },
+  {
+   "kind": "note",
+   "title": "From the shipyard floor",
+   "by": "PLACEHOLDER NOTE",
+   "blocks": [
+    {
+     "image": "31.jpg",
+     "text": "This part of the video is reserved for a note from the shipyard floor. In the finished video, these lines are written by someone who has managed dockings and refits."
+    },
+    {
+     "image": "32.jpg",
+     "text": "They say what the textbooks leave out. What the dock master actually watches. What goes wrong on a normal day. And what a good docking looks like from underneath."
+    },
+    {
+     "image": "33.jpg",
+     "text": "The words you are hearing now are placeholder text. They are here to test the layout, the coloured strip, and the length of this section."
+    }
+   ]
+  },
+  {
+   "title": "What gets done on the dock floor",
+   "blocks": [
+    {
+     "image": "34.jpg",
+     "text": "So the ship is down, and the dock floor is dry. Now everything that cannot be done afloat has to be done at once. And the clock is running, because every day in dock is a day without cargo."
+    },
+    {
+     "image": "35.jpg",
+     "text": "First, the hull is washed with high-pressure water. Then the old coating is blasted away, wherever it has failed."
+    },
+    {
+     "image": "36.jpg",
+     "text": "Surveyors walk the whole bottom, looking for dents, cracks and thin plating. This is the inspection that the rules ask for, and it decides how much steel has to be replaced."
+    },
+    {
+     "image": "37.jpg",
+     "text": "Then the paint goes back on, coat after coat. The last coats below the waterline are anti-fouling paint, made to keep slime and barnacles from taking hold."
+    },
+    {
+     "image": "38.jpg",
+     "text": "Blocks of zinc or aluminium, called sacrificial anodes, are renewed. They corrode on purpose, so that the hull does not."
+    },
+    {
+     "image": "39.jpg",
+     "text": "At the stern, the propeller is cleaned and polished, and the wear in the rudder and the propeller shaft is measured."
+    },
+    {
+     "image": "40.jpg",
+     "text": "The sea chests, the openings where the ship takes in cooling water, are opened and cleaned. The big valves behind them are taken apart and overhauled."
+    },
+    {
+     "image": "41.jpg",
+     "text": "Even the anchor chains come out. They are laid in long rows on the dock floor, so that every link can be checked and measured."
+    },
+    {
+     "image": "42.jpg",
+     "text": "And at the lowest points of the hull, drain plugs are taken out to empty the tanks. Each one is listed, because each one has to be back in place before the water returns."
+    },
+    {
+     "image": "43.jpg",
+     "text": "Then the dock is flooded again, slowly. The water is stopped when it reaches the sea valves, and the crew checks for leaks. Only then does the ship float off her blocks."
+    }
+   ]
+  },
+  {
+   "kind": "close",
+   "chapter": "The answer",
+   "end": {
+    "kicker": "NEXT IN THE DRY DOCK",
+    "title": "Why would a shipyard cut a finished cruise ship in half?"
+   },
+   "blocks": [
+    {
+     "image": "44.jpg",
+     "text": "So that is what really happens to a giant ship in dry dock. The sea is taken away. She is set down on a bed that was built only for her. And everything that is usually hidden gets inspected, repaired and painted."
+    },
+    {
+     "image": "45.jpg",
+     "text": "Next time in the dry dock. Why would a shipyard cut a finished cruise ship in half?"
+    }
+   ]
+  }
+ ]
+}
