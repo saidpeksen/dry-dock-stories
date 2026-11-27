@@ -188,7 +188,7 @@ bölümlerde. Altyazı bölmesi bazı cümlelerde kelime öbeğini ayırıyor (�
 
 ## Deneme metninin kaynakları
 
-Metin denemedir ve yayınlanmadı; "tersaneden bakınca" bölümü yer tutucudur. Olgular şu kaynaklarla denetlendi:
+Metin denemedir ve yayınlanmadı. "Tersaneden bakınca" bölümü kanal sahibinin kendi cevaplarından yazıldı ve onaylandı (27 Kasım 2026); bu bölüm kaynak değil tanıklıktır. Olgular şu kaynaklarla denetlendi:
 
 - Dip incelemesi, beş yılda en az iki kez, en çok 36 ay arayla (SOLAS I/10): Lloyd's Register Class News 10/13;
   IMO HSSC inceleme kılavuzu.
