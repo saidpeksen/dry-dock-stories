@@ -112,6 +112,11 @@ Ortam: bulut oturumu, 2 çekirdek, 7 GB bellek. Görseller geçicidir: köprüde
 Aynı oranla tahmin (ölçülmedi): 10 dk yaklaşık 445 MB ve 64 dk kurgu; 15 dk yaklaşık 670 MB ve 96 dk; 20 dk yaklaşık
 890 MB ve 128 dk.
 
+Gerçek yatay görsellerle (45 görsel, 1536×1024 JPEG) aynı metin yeniden kuruldu (27 Kasım 2026): 7 dk 56 sn,
+363,0 MB (346,2 MiB), 6,10 Mbit/s; şablon üretimi 39,8 dk (parça başına 136–157 sn), kodlama 5,3 dk, birleştirme
+12 sn, 720p izleme kopyası 2,2 dk ve 31,7 MB; ses önbellekten 27 sn; toplam 48,0 dk. Ses düzeyi −15,3 LUFS, tepe
+−1,2 dBFS. Dosya geçici görsellerle çıkandan yüzde 3 büyük; 95 MB'lık parçayla yine 4 parça.
+
 ### Kısa ölçümler (38,4 sn, aynı metin)
 
 | Değişken | Boyut | Bit hızı | Şablon üretimi |

@@ -1,9 +1,9 @@
 {
  "schema": 1,
- "updated_at": "2026-11-27T06:18:00Z",
+ "updated_at": "2026-11-27T08:30:43Z",
  "channel": "Dry Dock Stories",
  "runs": {
-  "claude": "2026-11-27T06:18:00Z",
+  "claude": "2026-11-27T08:30:43Z",
   "chatgpt": "2026-11-25T17:45:30Z"
  },
  "videos": [
@@ -105,6 +105,14 @@
    "title": "09.30 · Claude'da uzun video sohbetine \"devam\" yaz: 45 görsel tamamsa deneme videosu kurulur, değilse kaçının geldiği söylenir",
    "due": "2026-11-29",
    "window": "09.30",
+   "done": true,
+   "done_at": "2026-11-27T08:30:43Z"
+  },
+  {
+   "id": "uzun-deneme-karar",
+   "title": "19.00 · Uzun video denemesini Claude sohbetinde izle; görünüş kararını oraya yaz (uygun / şunu değiştir)",
+   "due": "2026-11-27",
+   "window": "19.00",
    "done": false
   }
  ]
