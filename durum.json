@@ -1,9 +1,9 @@
 {
  "schema": 1,
- "updated_at": "2026-11-27T06:10:11Z",
+ "updated_at": "2026-11-27T06:18:00Z",
  "channel": "Dry Dock Stories",
  "runs": {
-  "claude": "2026-11-27T06:10:11Z",
+  "claude": "2026-11-27T06:18:00Z",
   "chatgpt": "2026-11-25T17:45:30Z"
  },
  "videos": [
@@ -83,25 +83,23 @@
    "seconds": 37.1,
    "bytes": 36134077,
    "sha256": "3ff489ac3ec4f61a9af126af51252ed024938ab2bc9d3082fd6353ea2c1222dc"
+  },
+  {
+   "no": 6,
+   "slug": "06-keel-blocks",
+   "topic": "Dev gemi kuru havuzda takozlar üstünde nasıl durur (2019)",
+   "title": "How Does a Giant Ship Balance on Blocks?",
+   "hook": "The water drains away beneath a giant ship. Soon, all her weight will rest on blocks.",
+   "stage": "siparis",
+   "video": false,
+   "youtube_url": null,
+   "ordered_at": "2026-11-27T06:16:14Z",
+   "ready_at": null,
+   "approved_at": null,
+   "published_at": null
   }
  ],
  "tasks": [
-  {
-   "id": "uzun-video-hatti-denemesi",
-   "title": "09.30 · Claude'da bu projede yeni sohbet aç, yaz: kurulum-isleri notunu oku, 2. işi kur (uzun video hattı denemesi)",
-   "due": "2026-12-01",
-   "window": "09.30",
-   "done": true,
-   "done_at": "2026-11-27T00:01:52Z"
-  },
-  {
-   "id": "uzun-deneme-onay",
-   "title": "09.30 · Claude'da uzun video sohbetini aç, karelere ve örnek klibe bak; uygunsa \"deneme onay\" yaz (ChatGPT denemeleri başlar)",
-   "due": "2026-11-28",
-   "window": "09.30",
-   "done": true,
-   "done_at": "2026-11-27T06:06:00Z"
-  },
   {
    "id": "uzun-gorsel-devam",
    "title": "09.30 · Claude'da uzun video sohbetine \"devam\" yaz: 45 görsel tamamsa deneme videosu kurulur, değilse kaçının geldiği söylenir",
