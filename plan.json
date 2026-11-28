@@ -1,15 +1,15 @@
 {
  "schema": 1,
  "kind": "plan",
- "updated_at": "2026-11-27T06:18:00Z",
+ "updated_at": "2026-11-28T06:21:00Z",
  "title": "Dry Dock Stories – Uzun Vadeli Plan",
  "goal": "YouTube İş Ortaklığı Programı'na girip uzun videolardan reklam geliri almak. Gerçekçi ilk reklam geliri 12 ay ve üzeri; bir uzun video sıçrarsa daha erken. Bu kanal kısa vadeli gelir ihtiyacını karşılamaz. Shorts kanalı tanıtır, uzun videolar gelir eşiğini doldurur.",
  "now": {
   "summary": "Aşama 1. Dört Shorts yayında (19, 21 ve 23 Kasım); 04'ten itibaren soru biçimi. 26 Kasım: plan gözden geçirildi. 06'dan itibaren konular sırayla gelir: bir süreç sorusu (tersane, mühendislik), bir olay sorusu.",
   "next": [
-   "05 (Vasa: yeni savaş gemisi neden limanda battı?) videosu hazır, onay bekliyor; 19.00'a kadar onaylanırsa bu akşam yayınlanır.",
-   "06 siparişi açıldı (süreç: dev gemi takozlar üstünde nasıl durur?); görseller bu akşam, video 28 Kasım sabahı onaya düşer. İlk kare başlıklı ilk video.",
-   "16 Aralık: biçim kararı. 04–13 rakamlarıyla süreç ve olay soruları kıyaslanır; kazanan tür ilk uzun videoların kalıbı olur."
+   "05 (Vasa: yeni savaş gemisi neden limanda battı?) 26 Kasım'dan beri onay bekliyor; karar sitede ya da Claude sohbetinde.",
+   "06 (süreç: dev gemi takozlar üstünde nasıl durur?) videosu hazır, onay bekliyor; ilk kare başlıklı ilk video. 19.00'a kadar onaylanırsa bu akşam yayınlanır.",
+   "07 siparişi (olay: Vitaspirit, Boğaz 2018) yayınlanmamış video sayısı 2'nin altına inince açılır. 16 Aralık: biçim kararı."
   ]
  },
  "calendar": [
